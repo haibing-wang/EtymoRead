@@ -1,0 +1,11 @@
+# WXT Directories
+.wxt/
+.output/
+
+# Dependencies
+node_modules/
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db

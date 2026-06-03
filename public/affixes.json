@@ -1,0 +1,3530 @@
+[
+  {
+    "id": 1,
+    "affix": "-able",
+    "meaning": "able to be",
+    "examples": "excitable, portable, preventable",
+    "type": "suffix"
+  },
+  {
+    "id": 2,
+    "affix": "-ac",
+    "meaning": "pertaining to",
+    "examples": "cardiac, hemophiliac, maniac",
+    "type": "suffix"
+  },
+  {
+    "id": 3,
+    "affix": "-acity (-ocity)",
+    "meaning": "quality of",
+    "examples": "perspicacity, sagacity, velocity",
+    "type": "suffix"
+  },
+  {
+    "id": 4,
+    "affix": "-ade",
+    "meaning": "act, action or process, product",
+    "examples": "blockade, cavalcade, promenade",
+    "type": "suffix"
+  },
+  {
+    "id": 5,
+    "affix": "-age",
+    "meaning": "action or process",
+    "examples": "passage, pilgrimage, voyage",
+    "type": "suffix"
+  },
+  {
+    "id": 6,
+    "affix": "-aholic (-oholic)",
+    "meaning": "one with an obsession for",
+    "examples": "workaholic, shopaholic, alcoholic",
+    "type": "suffix"
+  },
+  {
+    "id": 7,
+    "affix": "-al",
+    "meaning": "relating to",
+    "examples": "bacterial, theatrical, natural",
+    "type": "suffix"
+  },
+  {
+    "id": 8,
+    "affix": "-algia",
+    "meaning": "pain",
+    "examples": "neuralgia, nostalgia",
+    "type": "suffix"
+  },
+  {
+    "id": 9,
+    "affix": "-an (-ian)",
+    "meaning": "relating to, belonging to",
+    "examples": "Italian, urban, African",
+    "type": "suffix"
+  },
+  {
+    "id": 10,
+    "affix": "-ance",
+    "meaning": "state or quality of",
+    "examples": "brilliance, defiance, annoyance",
+    "type": "suffix"
+  },
+  {
+    "id": 11,
+    "affix": "-ant",
+    "meaning": "a person who",
+    "examples": "applicant, immigrant, servant",
+    "type": "suffix"
+  },
+  {
+    "id": 12,
+    "affix": "-ant",
+    "meaning": "inclined to, tending to",
+    "examples": "brilliant, defiant, vigilant",
+    "type": "suffix"
+  },
+  {
+    "id": 13,
+    "affix": "-ar",
+    "meaning": "of or relating to, being",
+    "examples": "lunar, molecular, solar",
+    "type": "suffix"
+  },
+  {
+    "id": 14,
+    "affix": "-ar",
+    "meaning": "a person who",
+    "examples": "beggar, burglar, liar",
+    "type": "suffix"
+  },
+  {
+    "id": 15,
+    "affix": "-ard",
+    "meaning": "a person who does an action",
+    "examples": "coward, sluggard, wizard",
+    "type": "suffix"
+  },
+  {
+    "id": 16,
+    "affix": "-arian",
+    "meaning": "a person who",
+    "examples": "disciplinarian, vegetarian, librarian",
+    "type": "suffix"
+  },
+  {
+    "id": 17,
+    "affix": "-arium (-orium)",
+    "meaning": "a place for",
+    "examples": "terrarium, aquarium, solarium",
+    "type": "suffix"
+  },
+  {
+    "id": 18,
+    "affix": "-ary",
+    "meaning": "of or relating to",
+    "examples": "literary, military, budgetary",
+    "type": "suffix"
+  },
+  {
+    "id": 19,
+    "affix": "-ate",
+    "meaning": "state or quality of (adj.)",
+    "examples": "affectionate, desolate, obstinate",
+    "type": "suffix"
+  },
+  {
+    "id": 20,
+    "affix": "-ate",
+    "meaning": "makes the word a verb (different pronunciation)",
+    "examples": "activate, evaporate, medicate",
+    "type": "suffix"
+  },
+  {
+    "id": 21,
+    "affix": "-ation",
+    "meaning": "action or process",
+    "examples": "creation, narration, emancipation",
+    "type": "suffix"
+  },
+  {
+    "id": 22,
+    "affix": "-ative",
+    "meaning": "tending to (adj.)",
+    "examples": "creative, preservative, talkative",
+    "type": "suffix"
+  },
+  {
+    "id": 23,
+    "affix": "-cide",
+    "meaning": "act of killing",
+    "examples": "homicide, suicide, pesticide",
+    "type": "suffix"
+  },
+  {
+    "id": 24,
+    "affix": "-cracy",
+    "meaning": "rule, government, power",
+    "examples": "bureaucracy, aristocracy, theocracy",
+    "type": "suffix"
+  },
+  {
+    "id": 25,
+    "affix": "-crat",
+    "meaning": "someone who has power",
+    "examples": "aristocrat, bureaucrat, technocrat",
+    "type": "suffix"
+  },
+  {
+    "id": 26,
+    "affix": "-cule",
+    "meaning": "diminutive (making something small)",
+    "examples": "molecule, ridicule",
+    "type": "suffix"
+  },
+  {
+    "id": 27,
+    "affix": "-cy",
+    "meaning": "state, condition or quality",
+    "examples": "efficiency, privacy, belligerency",
+    "type": "suffix"
+  },
+  {
+    "id": 28,
+    "affix": "-cycle",
+    "meaning": "circle, wheel",
+    "examples": "bicycle, recycle, tricycle",
+    "type": "suffix"
+  },
+  {
+    "id": 29,
+    "affix": "-dom",
+    "meaning": "condition of, state, realm",
+    "examples": "boredom, freedom, wisdom",
+    "type": "suffix"
+  },
+  {
+    "id": 30,
+    "affix": "-dox",
+    "meaning": "belief, praise",
+    "examples": "orthodox, paradox",
+    "type": "suffix"
+  },
+  {
+    "id": 31,
+    "affix": "-ectomy",
+    "meaning": "surgical removal of",
+    "examples": "appendectomy, tonsillectomy, mastectomy",
+    "type": "suffix"
+  },
+  {
+    "id": 32,
+    "affix": "-ed",
+    "meaning": "past tense",
+    "examples": "called, hammered, laughed",
+    "type": "suffix"
+  },
+  {
+    "id": 33,
+    "affix": "-ee",
+    "meaning": "receiver, performer",
+    "examples": "nominee, employee, devotee",
+    "type": "suffix"
+  },
+  {
+    "id": 34,
+    "affix": "-eer",
+    "meaning": "associated with/engaged in",
+    "examples": "engineer, volunteer",
+    "type": "suffix"
+  },
+  {
+    "id": 35,
+    "affix": "-emia",
+    "meaning": "blood condition",
+    "examples": "anemia, hypoglycemia, leukemia",
+    "type": "suffix"
+  },
+  {
+    "id": 36,
+    "affix": "-en",
+    "meaning": "makes the word a verb",
+    "examples": "awaken, fasten, strengthen",
+    "type": "suffix"
+  },
+  {
+    "id": 37,
+    "affix": "-ence",
+    "meaning": "state or condition, action",
+    "examples": "absence, dependence, negligence",
+    "type": "suffix"
+  },
+  {
+    "id": 38,
+    "affix": "-ency",
+    "meaning": "condition or quality",
+    "examples": "clemency, dependency, efficiency",
+    "type": "suffix"
+  },
+  {
+    "id": 39,
+    "affix": "-ent",
+    "meaning": "inclined to performing/causing, or one who performs/causes",
+    "examples": "competent, correspondent, absorbent",
+    "type": "suffix"
+  },
+  {
+    "id": 40,
+    "affix": "-er",
+    "meaning": "more",
+    "examples": "bigger, faster, happier",
+    "type": "suffix"
+  },
+  {
+    "id": 41,
+    "affix": "-er",
+    "meaning": "action or process",
+    "examples": "flutter, ponder, stutter",
+    "type": "suffix"
+  },
+  {
+    "id": 42,
+    "affix": "-er",
+    "meaning": "a person who does an action",
+    "examples": "announcer, barber, teacher",
+    "type": "suffix"
+  },
+  {
+    "id": 43,
+    "affix": "-ern",
+    "meaning": "state or quality of",
+    "examples": "eastern, northern, western",
+    "type": "suffix"
+  },
+  {
+    "id": 44,
+    "affix": "-escence",
+    "meaning": "state or process",
+    "examples": "adolescence, convalescence, effervescence",
+    "type": "suffix"
+  },
+  {
+    "id": 45,
+    "affix": "-ese",
+    "meaning": "relating to a place",
+    "examples": "Chinese, Congolese, Vietnamese",
+    "type": "suffix"
+  },
+  {
+    "id": 46,
+    "affix": "-esque",
+    "meaning": "in the style of",
+    "examples": "Kafkaesque, grotesque, burlesque",
+    "type": "suffix"
+  },
+  {
+    "id": 47,
+    "affix": "-ess",
+    "meaning": "female",
+    "examples": "actress, heiress, lioness",
+    "type": "suffix"
+  },
+  {
+    "id": 48,
+    "affix": "-est",
+    "meaning": "most",
+    "examples": "funniest, hottest, silliest",
+    "type": "suffix"
+  },
+  {
+    "id": 49,
+    "affix": "-etic",
+    "meaning": "relating to (makes the word an adj.)",
+    "examples": "athletic, energetic, poetic",
+    "type": "suffix"
+  },
+  {
+    "id": 50,
+    "affix": "-ette",
+    "meaning": "diminutive (makes something smaller)",
+    "examples": "cigarette, diskette, kitchenette",
+    "type": "suffix"
+  },
+  {
+    "id": 51,
+    "affix": "-ful",
+    "meaning": "full of",
+    "examples": "helpful, thankful, cheerful",
+    "type": "suffix"
+  },
+  {
+    "id": 52,
+    "affix": "-fy",
+    "meaning": "make, cause (makes the word a verb)",
+    "examples": "amplify, falsify, terrify",
+    "type": "suffix"
+  },
+  {
+    "id": 53,
+    "affix": "-gam/-gamy",
+    "meaning": "marriage, union",
+    "examples": "monogamy, polygamy, bigamy",
+    "type": "suffix"
+  },
+  {
+    "id": 54,
+    "affix": "-gon/-gonic",
+    "meaning": "angle",
+    "examples": "hexagon, polygonic, pentagon",
+    "type": "suffix"
+  },
+  {
+    "id": 55,
+    "affix": "-hood",
+    "meaning": "state, condition, or quality",
+    "examples": "childhood, neighborhood, motherhood",
+    "type": "suffix"
+  },
+  {
+    "id": 56,
+    "affix": "-ial",
+    "meaning": "relating to",
+    "examples": "commercial, social, facial",
+    "type": "suffix"
+  },
+  {
+    "id": 57,
+    "affix": "-ian",
+    "meaning": "relating to",
+    "examples": "Martian, utopian, pediatrician",
+    "type": "suffix"
+  },
+  {
+    "id": 58,
+    "affix": "-iasis",
+    "meaning": "diseased condition",
+    "examples": "elephantiasis, psoriasis",
+    "type": "suffix"
+  },
+  {
+    "id": 59,
+    "affix": "-iatric",
+    "meaning": "healing practice",
+    "examples": "pediatric, psychiatric",
+    "type": "suffix"
+  },
+  {
+    "id": 60,
+    "affix": "-ible",
+    "meaning": "able to be",
+    "examples": "audible, plausible, legible",
+    "type": "suffix"
+  },
+  {
+    "id": 61,
+    "affix": "-ic/-ical",
+    "meaning": "relating to, characterized by",
+    "examples": "analytic/analytical, comic/comical, organic",
+    "type": "suffix"
+  },
+  {
+    "id": 62,
+    "affix": "-ile",
+    "meaning": "relating to, capable of",
+    "examples": "agile, docile, volatile",
+    "type": "suffix"
+  },
+  {
+    "id": 63,
+    "affix": "-ily",
+    "meaning": "in what manner",
+    "examples": "sloppily, steadily, zanily",
+    "type": "suffix"
+  },
+  {
+    "id": 64,
+    "affix": "-ine",
+    "meaning": "relating to",
+    "examples": "canine, feminine, masculine",
+    "type": "suffix"
+  },
+  {
+    "id": 65,
+    "affix": "-ing",
+    "meaning": "materials",
+    "examples": "bedding, frosting, roofing",
+    "type": "suffix"
+  },
+  {
+    "id": 66,
+    "affix": "-ing",
+    "meaning": "action or process",
+    "examples": "dancing, seeing, writing",
+    "type": "suffix"
+  },
+  {
+    "id": 67,
+    "affix": "-ion",
+    "meaning": "action or process",
+    "examples": "celebration, completion, navigation",
+    "type": "suffix"
+  },
+  {
+    "id": 68,
+    "affix": "-ious",
+    "meaning": "having the qualities of, full of",
+    "examples": "ambitious, cautious, gracious",
+    "type": "suffix"
+  },
+  {
+    "id": 69,
+    "affix": "-ish",
+    "meaning": "relating to, characteristic",
+    "examples": "apish, brutish, childish",
+    "type": "suffix"
+  },
+  {
+    "id": 70,
+    "affix": "-ism",
+    "meaning": "state or quality",
+    "examples": "altruism, despotism, heroism",
+    "type": "suffix"
+  },
+  {
+    "id": 71,
+    "affix": "-ist",
+    "meaning": "a person, one who does an action",
+    "examples": "artist, linguist, pianist",
+    "type": "suffix"
+  },
+  {
+    "id": 72,
+    "affix": "-ite",
+    "meaning": "resident of, follower, product of",
+    "examples": "suburbanite, luddite, dynamite",
+    "type": "suffix"
+  },
+  {
+    "id": 73,
+    "affix": "-itis",
+    "meaning": "inflammation, preoccupation",
+    "examples": "appendicitis, tonsillitis, frontrunneritis",
+    "type": "suffix"
+  },
+  {
+    "id": 74,
+    "affix": "-ity",
+    "meaning": "state, condition, or quality",
+    "examples": "abnormality, civility, necessity",
+    "type": "suffix"
+  },
+  {
+    "id": 75,
+    "affix": "-ive",
+    "meaning": "inclined to; quality of; that which",
+    "examples": "attractive, expensive, repulsive",
+    "type": "suffix"
+  },
+  {
+    "id": 76,
+    "affix": "-ization",
+    "meaning": "act or process of making",
+    "examples": "colonization, fertilization, modernization",
+    "type": "suffix"
+  },
+  {
+    "id": 77,
+    "affix": "-ize",
+    "meaning": "cause, treat, become",
+    "examples": "antagonize, authorize, popularize",
+    "type": "suffix"
+  },
+  {
+    "id": 78,
+    "affix": "-less",
+    "meaning": "without",
+    "examples": "fearless, helpless, homeless",
+    "type": "suffix"
+  },
+  {
+    "id": 79,
+    "affix": "-let",
+    "meaning": "version of",
+    "examples": "booklet, droplet, inlet",
+    "type": "suffix"
+  },
+  {
+    "id": 80,
+    "affix": "-like",
+    "meaning": "resembling, characteristic",
+    "examples": "childlike, lifelike, homelike",
+    "type": "suffix"
+  },
+  {
+    "id": 81,
+    "affix": "-ling",
+    "meaning": "younger or inferior",
+    "examples": "duckling, underling",
+    "type": "suffix"
+  },
+  {
+    "id": 82,
+    "affix": "-loger/-logist",
+    "meaning": "one who does",
+    "examples": "astrologer, cardiologist, chronologer",
+    "type": "suffix"
+  },
+  {
+    "id": 83,
+    "affix": "-log",
+    "meaning": "speech",
+    "examples": "dialog, monolog",
+    "type": "suffix"
+  },
+  {
+    "id": 84,
+    "affix": "-ly",
+    "meaning": "in what manner",
+    "examples": "badly, courageously, happily",
+    "type": "suffix"
+  },
+  {
+    "id": 85,
+    "affix": "-ment",
+    "meaning": "action, result",
+    "examples": "movement, placement, shipment",
+    "type": "suffix"
+  },
+  {
+    "id": 86,
+    "affix": "-ness",
+    "meaning": "state or quality (makes a noun)",
+    "examples": "kindness, shyness, weakness",
+    "type": "suffix"
+  },
+  {
+    "id": 87,
+    "affix": "-oid",
+    "meaning": "resembling",
+    "examples": "humanoid, tabloid, hemorrhoid",
+    "type": "suffix"
+  },
+  {
+    "id": 88,
+    "affix": "-ology",
+    "meaning": "study of, science of",
+    "examples": "biology, psychology, geology",
+    "type": "suffix"
+  },
+  {
+    "id": 89,
+    "affix": "-oma",
+    "meaning": "tumor, swelling",
+    "examples": "carcinoma, osteoma, hematoma",
+    "type": "suffix"
+  },
+  {
+    "id": 90,
+    "affix": "-onym",
+    "meaning": "name, word",
+    "examples": "synonym, antonym, homonym",
+    "type": "suffix"
+  },
+  {
+    "id": 91,
+    "affix": "-opia",
+    "meaning": "eye defect",
+    "examples": "myopia, nyctalopia, hyperopia",
+    "type": "suffix"
+  },
+  {
+    "id": 92,
+    "affix": "-opsy",
+    "meaning": "examination",
+    "examples": "biopsy, autopsy, necropsy",
+    "type": "suffix"
+  },
+  {
+    "id": 93,
+    "affix": "-or",
+    "meaning": "a person who",
+    "examples": "inventor, legislator, translator",
+    "type": "suffix"
+  },
+  {
+    "id": 94,
+    "affix": "-ory",
+    "meaning": "relating to",
+    "examples": "armory, dormitory, laboratory",
+    "type": "suffix"
+  },
+  {
+    "id": 95,
+    "affix": "-osis",
+    "meaning": "process, diseased condition",
+    "examples": "diagnosis, prognosis, neurosis, psychosis",
+    "type": "suffix"
+  },
+  {
+    "id": 96,
+    "affix": "-ostomy/-otomy",
+    "meaning": "surgical",
+    "examples": "colostomy, lobotomy, craniotomy",
+    "type": "suffix"
+  },
+  {
+    "id": 97,
+    "affix": "-ous",
+    "meaning": "full of",
+    "examples": "hazardous, humorous, wondrous",
+    "type": "suffix"
+  },
+  {
+    "id": 98,
+    "affix": "-path",
+    "meaning": "one who engages in",
+    "examples": "psychopath, naturopath, osteopath",
+    "type": "suffix"
+  },
+  {
+    "id": 99,
+    "affix": "-pathy",
+    "meaning": "feeling, diseased",
+    "examples": "sympathy, apathy, neuropathy",
+    "type": "suffix"
+  },
+  {
+    "id": 100,
+    "affix": "-phile",
+    "meaning": "one who loves",
+    "examples": "bibliophile, audiophile, pyrophile",
+    "type": "suffix"
+  },
+  {
+    "id": 101,
+    "affix": "-phobia",
+    "meaning": "abnormal fear of",
+    "examples": "acrophobia, claustrophobia, xenophobia",
+    "type": "suffix"
+  },
+  {
+    "id": 102,
+    "affix": "-phone",
+    "meaning": "sound",
+    "examples": "homophone, telephone, microphone",
+    "type": "suffix"
+  },
+  {
+    "id": 103,
+    "affix": "-phyte",
+    "meaning": "plant, to grow",
+    "examples": "zoophyte, cryptophyte, epiphyte",
+    "type": "suffix"
+  },
+  {
+    "id": 104,
+    "affix": "-plegia",
+    "meaning": "paralysis",
+    "examples": "paraplegia, quadriplegia, hemiplegia",
+    "type": "suffix"
+  },
+  {
+    "id": 105,
+    "affix": "-plegic",
+    "meaning": "one who is paralyzed",
+    "examples": "paraplegic, technoplegic, quadriplegic",
+    "type": "suffix"
+  },
+  {
+    "id": 106,
+    "affix": "-pnea",
+    "meaning": "air, spirit",
+    "examples": "apnea, hyperpnea, orthopnea",
+    "type": "suffix"
+  },
+  {
+    "id": 107,
+    "affix": "-scopy/-scope",
+    "meaning": "visual exam",
+    "examples": "arthroscopy, gastroscopy, microscope",
+    "type": "suffix"
+  },
+  {
+    "id": 108,
+    "affix": "-scribe/-script",
+    "meaning": "to write",
+    "examples": "transcript, describe, manuscript",
+    "type": "suffix"
+  },
+  {
+    "id": 109,
+    "affix": "-sect",
+    "meaning": "to cut",
+    "examples": "dissect, insect, bisect",
+    "type": "suffix"
+  },
+  {
+    "id": 110,
+    "affix": "-ship",
+    "meaning": "state or condition of, skill of",
+    "examples": "authorship, citizenship, friendship",
+    "type": "suffix"
+  },
+  {
+    "id": 111,
+    "affix": "-sion",
+    "meaning": "state or quality",
+    "examples": "confusion, depression, tension",
+    "type": "suffix"
+  },
+  {
+    "id": 112,
+    "affix": "-some",
+    "meaning": "characterized by, group of",
+    "examples": "cumbersome, quarrelsome, foursome",
+    "type": "suffix"
+  },
+  {
+    "id": 113,
+    "affix": "-sophy/-sophic",
+    "meaning": "wisdom, knowledge",
+    "examples": "philosophy, theosophy, anthroposophic",
+    "type": "suffix"
+  },
+  {
+    "id": 114,
+    "affix": "-th",
+    "meaning": "state or quality",
+    "examples": "growth, strength, warmth",
+    "type": "suffix"
+  },
+  {
+    "id": 115,
+    "affix": "-tion",
+    "meaning": "state or quality",
+    "examples": "attention, caution, fascination",
+    "type": "suffix"
+  },
+  {
+    "id": 116,
+    "affix": "-tome/-tomy",
+    "meaning": "to cut",
+    "examples": "hysterectomy, epitome, tonsillotomy",
+    "type": "suffix"
+  },
+  {
+    "id": 117,
+    "affix": "-trophy",
+    "meaning": "nourishment, growth",
+    "examples": "atrophy, hypertrophy, dystrophy",
+    "type": "suffix"
+  },
+  {
+    "id": 118,
+    "affix": "-tude",
+    "meaning": "state, condition or quality",
+    "examples": "fortitude, gratitude, magnitude",
+    "type": "suffix"
+  },
+  {
+    "id": 119,
+    "affix": "-ty",
+    "meaning": "state, condition or quality",
+    "examples": "ability, honesty, loyalty",
+    "type": "suffix"
+  },
+  {
+    "id": 120,
+    "affix": "-ular",
+    "meaning": "relating to or resembling",
+    "examples": "cellular, circular, muscular",
+    "type": "suffix"
+  },
+  {
+    "id": 121,
+    "affix": "-uous",
+    "meaning": "state or quality of",
+    "examples": "arduous, tumultuous, virtuous",
+    "type": "suffix"
+  },
+  {
+    "id": 122,
+    "affix": "-ure",
+    "meaning": "action, condition",
+    "examples": "closure, erasure, failure",
+    "type": "suffix"
+  },
+  {
+    "id": 123,
+    "affix": "-ward",
+    "meaning": "specifies direction",
+    "examples": "backward, eastward, homeward",
+    "type": "suffix"
+  },
+  {
+    "id": 124,
+    "affix": "-ware",
+    "meaning": "things of the same type or material",
+    "examples": "hardware, software, kitchenware",
+    "type": "suffix"
+  },
+  {
+    "id": 125,
+    "affix": "-wise",
+    "meaning": "in what manner or direction",
+    "examples": "clockwise, lengthwise, otherwise",
+    "type": "suffix"
+  },
+  {
+    "id": 126,
+    "affix": "-y",
+    "meaning": "made up of, characterized",
+    "examples": "cloudy, rainy, sunny",
+    "type": "suffix"
+  },
+  {
+    "id": 127,
+    "affix": "a-, ac-, ad-, af-, ag-, al-, an-, ap-, as-, at-",
+    "meaning": "to, toward, near, in addition to, by",
+    "examples": "aside, accompany, adjust, aggression, allocate, annihilate, affix, associate, attend, adverb",
+    "type": "prefix"
+  },
+  {
+    "id": 128,
+    "affix": "a-, an-",
+    "meaning": "not, without",
+    "examples": "apolitical, atheist, anarchy, anonymous, apathy, aphasia, anemia",
+    "type": "prefix"
+  },
+  {
+    "id": 129,
+    "affix": "ab-, abs-",
+    "meaning": "away from, off",
+    "examples": "absolve, abrupt, absent",
+    "type": "prefix"
+  },
+  {
+    "id": 130,
+    "affix": "acer-, acid-, acri-",
+    "meaning": "bitter, sour, sharp",
+    "examples": "acerbic, acidity, acrid, acrimony",
+    "type": "prefix"
+  },
+  {
+    "id": 131,
+    "affix": "act-, ag-",
+    "meaning": "do, act, drive",
+    "examples": "active, react, agent, agitate",
+    "type": "prefix"
+  },
+  {
+    "id": 132,
+    "affix": "acu-",
+    "meaning": "sharp",
+    "examples": "acute, acupuncture, accurate",
+    "type": "prefix"
+  },
+  {
+    "id": 133,
+    "affix": "aer-, aero-",
+    "meaning": "air, atmosphere, aviation",
+    "examples": "aerial, aerosol, aerodrome",
+    "type": "prefix"
+  },
+  {
+    "id": 134,
+    "affix": "ag-, agi-, ig-, act-",
+    "meaning": "do, move, go",
+    "examples": "agent, agenda, agitate, navigate, ambiguous, action",
+    "type": "prefix"
+  },
+  {
+    "id": 135,
+    "affix": "agri-, agro-",
+    "meaning": "pertaining to fields or soil",
+    "examples": "agriculture, agroindustry",
+    "type": "prefix"
+  },
+  {
+    "id": 136,
+    "affix": "alb-, albo-",
+    "meaning": "white, without pigment",
+    "examples": "albino, albite",
+    "type": "prefix"
+  },
+  {
+    "id": 137,
+    "affix": "ali-, allo-, alter-",
+    "meaning": "other",
+    "examples": "alias, alibi, alien, alloy, alter, alter ego, altruism",
+    "type": "prefix"
+  },
+  {
+    "id": 138,
+    "affix": "alt-",
+    "meaning": "high, deep",
+    "examples": "altimeter, altitude",
+    "type": "prefix"
+  },
+  {
+    "id": 139,
+    "affix": "am-, ami-, amor-",
+    "meaning": "love, like, liking",
+    "examples": "amorous, amiable, amicable, enamoured",
+    "type": "prefix"
+  },
+  {
+    "id": 140,
+    "affix": "ambi-",
+    "meaning": "both",
+    "examples": "ambidextrous",
+    "type": "prefix"
+  },
+  {
+    "id": 141,
+    "affix": "ambul-",
+    "meaning": "to walk",
+    "examples": "ambulatory, amble, ambulance, somnambulist",
+    "type": "prefix"
+  },
+  {
+    "id": 142,
+    "affix": "ana-, ano-",
+    "meaning": "up, back, again, anew",
+    "examples": "anode, anagram, anagenetic",
+    "type": "prefix"
+  },
+  {
+    "id": 143,
+    "affix": "andr-, andro-",
+    "meaning": "male, characteristics of men",
+    "examples": "androcentric, android",
+    "type": "prefix"
+  },
+  {
+    "id": 144,
+    "affix": "ang-",
+    "meaning": "angular",
+    "examples": "angle",
+    "type": "prefix"
+  },
+  {
+    "id": 145,
+    "affix": "anim-",
+    "meaning": "mind, life, spirit, anger",
+    "examples": "animal, animate, animosity",
+    "type": "prefix"
+  },
+  {
+    "id": 146,
+    "affix": "ann-, annu-, enni-",
+    "meaning": "yearly",
+    "examples": "annual, annuity, anniversary, perennial",
+    "type": "prefix"
+  },
+  {
+    "id": 147,
+    "affix": "ante-",
+    "meaning": "before",
+    "examples": "anterior, anteroom, antebellum, antedate, antecedent, antediluvian",
+    "type": "prefix"
+  },
+  {
+    "id": 148,
+    "affix": "anthrop-",
+    "meaning": "man",
+    "examples": "anthropology, misanthrope, philanthropy",
+    "type": "prefix"
+  },
+  {
+    "id": 149,
+    "affix": "anti-, ant-",
+    "meaning": "against, opposite",
+    "examples": "antisocial, antiseptic, antithesis, antibody, antifreeze, antipathy",
+    "type": "prefix"
+  },
+  {
+    "id": 150,
+    "affix": "anti-, antico-",
+    "meaning": "old",
+    "examples": "antique, antiquated, antiquity",
+    "type": "prefix"
+  },
+  {
+    "id": 151,
+    "affix": "apo-, ap-, aph-",
+    "meaning": "away from, detached, formed",
+    "examples": "apology, apocalypse, aphagia",
+    "type": "prefix"
+  },
+  {
+    "id": 152,
+    "affix": "aqu-",
+    "meaning": "water",
+    "examples": "aqueous, aquarium, aqueduct",
+    "type": "prefix"
+  },
+  {
+    "id": 153,
+    "affix": "arch-",
+    "meaning": "chief, first, rule",
+    "examples": "archangel, architect, archaic, monarchy, matriarchy, patriarchy",
+    "type": "prefix"
+  },
+  {
+    "id": 154,
+    "affix": "aster-, astr-",
+    "meaning": "star",
+    "examples": "aster, asterisk, asteroid, astronomy, astronaut",
+    "type": "prefix"
+  },
+  {
+    "id": 155,
+    "affix": "auc-, aug-, aut-",
+    "meaning": "to originate, to increase",
+    "examples": "augment, author, auction",
+    "type": "prefix"
+  },
+  {
+    "id": 156,
+    "affix": "aud-, audi-, aur-, aus-",
+    "meaning": "to hear, listen",
+    "examples": "audience, audio, audible, auditorium, audiovisual, audition, auricular, auscultate",
+    "type": "prefix"
+  },
+  {
+    "id": 157,
+    "affix": "aug-, auc-",
+    "meaning": "increase",
+    "examples": "augur, augment, auction",
+    "type": "prefix"
+  },
+  {
+    "id": 158,
+    "affix": "aut-, auto-",
+    "meaning": "self",
+    "examples": "automobile, automatic, automotive, autograph, autonomous, autoimmune",
+    "type": "prefix"
+  },
+  {
+    "id": 159,
+    "affix": "bar-",
+    "meaning": "weight, pressure",
+    "examples": "barometer",
+    "type": "prefix"
+  },
+  {
+    "id": 160,
+    "affix": "be-",
+    "meaning": "on, around, over, about, excessively, make, cause, name, affect",
+    "examples": "berate, bedeck, bespeak, belittle, beleaguer",
+    "type": "prefix"
+  },
+  {
+    "id": 161,
+    "affix": "belli-",
+    "meaning": "war",
+    "examples": "rebellion, belligerent, casus belli, bellicose",
+    "type": "prefix"
+  },
+  {
+    "id": 162,
+    "affix": "bene-",
+    "meaning": "good, well, gentle",
+    "examples": "benefactor, beneficial, benevolent, benediction, beneficiary, benefit",
+    "type": "prefix"
+  },
+  {
+    "id": 163,
+    "affix": "bi-, bine-",
+    "meaning": "two",
+    "examples": "biped, bifurcate, biweekly, bivalve, biannual",
+    "type": "prefix"
+  },
+  {
+    "id": 164,
+    "affix": "bibl-, bibli-, biblio-",
+    "meaning": "book",
+    "examples": "bibliophile, bibliography, Bible",
+    "type": "prefix"
+  },
+  {
+    "id": 165,
+    "affix": "bio-, bi-",
+    "meaning": "life",
+    "examples": "biography, biology, biometrics, biome, biosphere",
+    "type": "prefix"
+  },
+  {
+    "id": 166,
+    "affix": "brev-",
+    "meaning": "short",
+    "examples": "abbreviate, brevity, brief",
+    "type": "prefix"
+  },
+  {
+    "id": 167,
+    "affix": "cad-, cap-, cas-, ceiv-, cept-, capt-, cid-, cip-",
+    "meaning": "to take, to seize, to hold",
+    "examples": "receive, deceive, capable, capacious, captive, accident, capture, occasion, concept, intercept, forceps, except, reciprocate",
+    "type": "prefix"
+  },
+  {
+    "id": 168,
+    "affix": "cad-, cas-",
+    "meaning": "to fall",
+    "examples": "cadaver, cadence, cascade",
+    "type": "prefix"
+  },
+  {
+    "id": 169,
+    "affix": "calor-",
+    "meaning": "heat",
+    "examples": "calorie, caloric, calorimeter",
+    "type": "prefix"
+  },
+  {
+    "id": 170,
+    "affix": "capit-, capt-",
+    "meaning": "head",
+    "examples": "decapitate, capital, captain, caption",
+    "type": "prefix"
+  },
+  {
+    "id": 171,
+    "affix": "carn-",
+    "meaning": "flesh",
+    "examples": "carnivorous, incarnate, reincarnation, carnal",
+    "type": "prefix"
+  },
+  {
+    "id": 172,
+    "affix": "cat-, cata-, cath-",
+    "meaning": "down, with",
+    "examples": "catalogue, category, catheter",
+    "type": "prefix"
+  },
+  {
+    "id": 173,
+    "affix": "caus-, caut-",
+    "meaning": "burn, heat",
+    "examples": "caustic, cauldron, cauterize",
+    "type": "prefix"
+  },
+  {
+    "id": 174,
+    "affix": "cause-, cuse-, cus-",
+    "meaning": "cause, motive",
+    "examples": "because, excuse, accusation",
+    "type": "prefix"
+  },
+  {
+    "id": 175,
+    "affix": "ceas-, ced-, cede-, ceed-, cess-",
+    "meaning": "to go, to yield, move, go, surrender",
+    "examples": "succeed, proceed, precede, recede, secession, exceed, succession",
+    "type": "prefix"
+  },
+  {
+    "id": 176,
+    "affix": "cent-",
+    "meaning": "hundred",
+    "examples": "centennial, century, centipede",
+    "type": "prefix"
+  },
+  {
+    "id": 177,
+    "affix": "centr-, centri-",
+    "meaning": "center",
+    "examples": "eccentricity, centrifugal, concentric, eccentric",
+    "type": "prefix"
+  },
+  {
+    "id": 178,
+    "affix": "chrom-",
+    "meaning": "color",
+    "examples": "chrome, chromosome, polychrome, chromatic",
+    "type": "prefix"
+  },
+  {
+    "id": 179,
+    "affix": "chron-",
+    "meaning": "time",
+    "examples": "chronology, chronic, chronicle, chronometer, anachronism, synchronize",
+    "type": "prefix"
+  },
+  {
+    "id": 180,
+    "affix": "cide-, cis-, cise-",
+    "meaning": "to kill, to cut, cut down",
+    "examples": "fratricide, homicide, incision, circumcision, scissors",
+    "type": "prefix"
+  },
+  {
+    "id": 181,
+    "affix": "circum-",
+    "meaning": "around",
+    "examples": "circumnavigate, circumflex, circumstance, circumcision, circumference, circumorbital, circumlocution, circumvent, circumscribe, circulatory",
+    "type": "prefix"
+  },
+  {
+    "id": 182,
+    "affix": "cit-",
+    "meaning": "call, start",
+    "examples": "incite, citation, cite",
+    "type": "prefix"
+  },
+  {
+    "id": 183,
+    "affix": "civ-",
+    "meaning": "citizen",
+    "examples": "civic, civil, civilian, civilization",
+    "type": "prefix"
+  },
+  {
+    "id": 184,
+    "affix": "clam-, claim-",
+    "meaning": "cry out",
+    "examples": "exclamation, clamor, proclamation, reclamation, acclaim",
+    "type": "prefix"
+  },
+  {
+    "id": 185,
+    "affix": "clin-",
+    "meaning": "lean, bend",
+    "examples": "decline, aclinic, inclination",
+    "type": "prefix"
+  },
+  {
+    "id": 186,
+    "affix": "clud-, clus-, claus-",
+    "meaning": "to close, shut",
+    "examples": "include, exclude, clause, claustrophobia, enclose, exclusive, reclusive, conclude",
+    "type": "prefix"
+  },
+  {
+    "id": 187,
+    "affix": "co-, cog-, col-, coll-, con-, com-, cor-",
+    "meaning": "with, together",
+    "examples": "cohesiveness, cognate, collaborate, convene, commitment, compress, contemporary, converge, compact, confluence, convenient, concatenate, conjoin, combine, correct",
+    "type": "prefix"
+  },
+  {
+    "id": 188,
+    "affix": "cogn-, gnos-",
+    "meaning": "to know",
+    "examples": "recognize, cognizant, diagnose, agnostic, incognito, prognosis",
+    "type": "prefix"
+  },
+  {
+    "id": 189,
+    "affix": "com-, con-",
+    "meaning": "fully",
+    "examples": "complete, compel, conscious, condense, confess, confirm",
+    "type": "prefix"
+  },
+  {
+    "id": 190,
+    "affix": "contr-, contra-, counter-",
+    "meaning": "against, opposite",
+    "examples": "contradict, counteract, contravene, contrary, counterspy, contrapuntal",
+    "type": "prefix"
+  },
+  {
+    "id": 191,
+    "affix": "cord-, cor-, cardi-",
+    "meaning": "heart",
+    "examples": "cordial, concord, discord, courage, encourage",
+    "type": "prefix"
+  },
+  {
+    "id": 192,
+    "affix": "corp-",
+    "meaning": "body",
+    "examples": "corporation, corporal punishment, corpse, corpulent, corpus luteum",
+    "type": "prefix"
+  },
+  {
+    "id": 193,
+    "affix": "cort-",
+    "meaning": "correct",
+    "examples": "escort, cortage",
+    "type": "prefix"
+  },
+  {
+    "id": 194,
+    "affix": "cosm-",
+    "meaning": "universe, world",
+    "examples": "cosmos, microcosm, cosmopolitan, cosmonaut",
+    "type": "prefix"
+  },
+  {
+    "id": 195,
+    "affix": "cour-, cur-, curr-, curs-",
+    "meaning": "run, course",
+    "examples": "occur, excursion, discourse, courier, course",
+    "type": "prefix"
+  },
+  {
+    "id": 196,
+    "affix": "crat-, cracy-",
+    "meaning": "rule",
+    "examples": "autocrat, aristocrat, theocracy, technocracy",
+    "type": "prefix"
+  },
+  {
+    "id": 197,
+    "affix": "cre-, cresc-, cret-, crease-",
+    "meaning": "grow",
+    "examples": "create, crescent, accretion, increase",
+    "type": "prefix"
+  },
+  {
+    "id": 198,
+    "affix": "crea-",
+    "meaning": "create",
+    "examples": "creature, recreation, creation",
+    "type": "prefix"
+  },
+  {
+    "id": 199,
+    "affix": "cred-",
+    "meaning": "believe",
+    "examples": "creed, credo, credence, credit, credulous, incredulous, incredible",
+    "type": "prefix"
+  },
+  {
+    "id": 200,
+    "affix": "cresc-, cret-, crease-, cru-",
+    "meaning": "rise, grow",
+    "examples": "crescendo, concrete, increase, decrease, accrue",
+    "type": "prefix"
+  },
+  {
+    "id": 201,
+    "affix": "crit-",
+    "meaning": "separate, choose",
+    "examples": "critical, criterion, hypocrite",
+    "type": "prefix"
+  },
+  {
+    "id": 202,
+    "affix": "cur-, curs-",
+    "meaning": "run",
+    "examples": "current, concurrent, concur, incur, recur, occur, courier, precursor, cursive",
+    "type": "prefix"
+  },
+  {
+    "id": 203,
+    "affix": "cura-",
+    "meaning": "care",
+    "examples": "curator, curative, manicure",
+    "type": "prefix"
+  },
+  {
+    "id": 204,
+    "affix": "cycl-, cyclo-",
+    "meaning": "wheel, circle, circular",
+    "examples": "Cyclops, unicycle, bicycle, cyclone, cyclic",
+    "type": "prefix"
+  },
+  {
+    "id": 205,
+    "affix": "de-",
+    "meaning": "from, down, away, to do the opposite, reverse, against",
+    "examples": "detach, deploy, derange, decrease, deodorize, devoid, deflate, degenerate",
+    "type": "prefix"
+  },
+  {
+    "id": 206,
+    "affix": "dec-, deca-",
+    "meaning": "ten, ten times",
+    "examples": "decimal, decade, decalogue, decimate, decathlon",
+    "type": "prefix"
+  },
+  {
+    "id": 207,
+    "affix": "dec-, dign-",
+    "meaning": "suitable",
+    "examples": "decent, decorate, dignity",
+    "type": "prefix"
+  },
+  {
+    "id": 208,
+    "affix": "dei-, div-",
+    "meaning": "God",
+    "examples": "divinity, divine, deity, divination, deify",
+    "type": "prefix"
+  },
+  {
+    "id": 209,
+    "affix": "dem-, demo-",
+    "meaning": "people, populace, population",
+    "examples": "democracy, demography, demagogue, epidemic",
+    "type": "prefix"
+  },
+  {
+    "id": 210,
+    "affix": "dent-, dont-",
+    "meaning": "tooth",
+    "examples": "dental, denture, orthodontist, periodontal",
+    "type": "prefix"
+  },
+  {
+    "id": 211,
+    "affix": "derm-",
+    "meaning": "skin, covering",
+    "examples": "hypodermic, dermatology, epidermis, taxidermy",
+    "type": "prefix"
+  },
+  {
+    "id": 212,
+    "affix": "di-, dy-",
+    "meaning": "two, twice, double",
+    "examples": "divide, diverge, diglycerides",
+    "type": "prefix"
+  },
+  {
+    "id": 213,
+    "affix": "dia-",
+    "meaning": "through, across, between",
+    "examples": "diameter, diagonal, dialogue, dialect, dialectic, diagnosis, diachronic",
+    "type": "prefix"
+  },
+  {
+    "id": 214,
+    "affix": "dic-, dict-, dit-",
+    "meaning": "say, speak",
+    "examples": "dictation, dictionary, dictate, dictator, Dictaphone, edict, predict, verdict, contradict, benediction",
+    "type": "prefix"
+  },
+  {
+    "id": 215,
+    "affix": "dis-, dif-",
+    "meaning": "not, opposite of, reverse, separate, deprive of, away",
+    "examples": "dismiss, differ, disallow, disperse, dissuade, divide, disconnect, disproportion, disrespect, distemper, disarray",
+    "type": "prefix"
+  },
+  {
+    "id": 216,
+    "affix": "dit-",
+    "meaning": "give",
+    "examples": "credit, audit",
+    "type": "prefix"
+  },
+  {
+    "id": 217,
+    "affix": "doc-, doct-",
+    "meaning": "teach, prove",
+    "examples": "docile, doctor, doctrine, document, dogma, indoctrinate",
+    "type": "prefix"
+  },
+  {
+    "id": 218,
+    "affix": "domin-",
+    "meaning": "master, that which is under control",
+    "examples": "dominate, dominion, predominant, domain",
+    "type": "prefix"
+  },
+  {
+    "id": 219,
+    "affix": "don-",
+    "meaning": "give",
+    "examples": "donate, condone",
+    "type": "prefix"
+  },
+  {
+    "id": 220,
+    "affix": "dorm-",
+    "meaning": "sleep",
+    "examples": "dormant, dormitory",
+    "type": "prefix"
+  },
+  {
+    "id": 221,
+    "affix": "dox-",
+    "meaning": "thought, opinion, praise",
+    "examples": "orthodox, heterodox, paradox, doxology",
+    "type": "prefix"
+  },
+  {
+    "id": 222,
+    "affix": "duc-, duct-",
+    "meaning": "to lead, pull",
+    "examples": "produce, abduct, product, transducer, viaduct, aqueduct, induct, deduct, reduce, induce",
+    "type": "prefix"
+  },
+  {
+    "id": 223,
+    "affix": "dura-",
+    "meaning": "hard, lasting",
+    "examples": "durable, duration, endure",
+    "type": "prefix"
+  },
+  {
+    "id": 224,
+    "affix": "dynam-",
+    "meaning": "power",
+    "examples": "dynamo, dynamic, dynamite, hydrodynamics",
+    "type": "prefix"
+  },
+  {
+    "id": 225,
+    "affix": "dys-",
+    "meaning": "bad, abnormal, difficult, impaired, unfavorable",
+    "examples": "dysfunctional, dyslexia, dyspathy",
+    "type": "prefix"
+  },
+  {
+    "id": 226,
+    "affix": "e-",
+    "meaning": "not, missing, out, fully, away, computer network related",
+    "examples": "emit, embed, eternal, ether, erase, email, e-tailer",
+    "type": "prefix"
+  },
+  {
+    "id": 227,
+    "affix": "ec-",
+    "meaning": "out of, outside",
+    "examples": "echo, eclipse, eclectic, ecesis, ecstasy, eczema",
+    "type": "prefix"
+  },
+  {
+    "id": 228,
+    "affix": "eco-",
+    "meaning": "household, environment, relating to ecology or economy",
+    "examples": "ecology, economize, ecospheres, ecomanagement",
+    "type": "prefix"
+  },
+  {
+    "id": 229,
+    "affix": "ecto-",
+    "meaning": "outside, external",
+    "examples": "ectomorph, ectoderm, ectoplasm",
+    "type": "prefix"
+  },
+  {
+    "id": 230,
+    "affix": "en-, em-",
+    "meaning": "put into, make, provide with, surround with",
+    "examples": "enamor, embolden, enslave, empower, entangle",
+    "type": "prefix"
+  },
+  {
+    "id": 231,
+    "affix": "end-",
+    "meaning": "inside, within",
+    "examples": "endorse, endocardial, endergonic, endoskeleton, endoscope, endogenous",
+    "type": "prefix"
+  },
+  {
+    "id": 232,
+    "affix": "epi-",
+    "meaning": "upon, close to, over, after, altered",
+    "examples": "epicenter, epicarp, epilogue, epigone, epidiorite",
+    "type": "prefix"
+  },
+  {
+    "id": 233,
+    "affix": "equi-",
+    "meaning": "equal",
+    "examples": "equidistant, equilateral, equilibrium, equinox, equation, equator",
+    "type": "prefix"
+  },
+  {
+    "id": 234,
+    "affix": "erg-",
+    "meaning": "work, effect",
+    "examples": "energy, erg, allergy, ergometer, ergograph, ergophobia",
+    "type": "prefix"
+  },
+  {
+    "id": 235,
+    "affix": "ev-, et-",
+    "meaning": "time, age",
+    "examples": "medieval, eternal",
+    "type": "prefix"
+  },
+  {
+    "id": 236,
+    "affix": "ex-",
+    "meaning": "out of, away from, lacking, former",
+    "examples": "exit, exhale, exclusive, exceed, explosion, ex-mayor",
+    "type": "prefix"
+  },
+  {
+    "id": 237,
+    "affix": "exter-, extra-, extro-",
+    "meaning": "outside of, beyond",
+    "examples": "external, extrinsic, extraordinary, extrapolate, extraneous, extrovert",
+    "type": "prefix"
+  },
+  {
+    "id": 238,
+    "affix": "fa-, fess-",
+    "meaning": "speak",
+    "examples": "fable, fabulous, fame, famous, confess, profess",
+    "type": "prefix"
+  },
+  {
+    "id": 239,
+    "affix": "fac-, fact-, fec-, fect-, fic-, fas-, fea-",
+    "meaning": "do, make",
+    "examples": "difficult, fashion, feasible, feature, factory, fact, effect, manufacture, amplification, confection",
+    "type": "prefix"
+  },
+  {
+    "id": 240,
+    "affix": "fall-, fals-",
+    "meaning": "deceive",
+    "examples": "fallacy, falsify, fallacious",
+    "type": "prefix"
+  },
+  {
+    "id": 241,
+    "affix": "femto-",
+    "meaning": "quadrillionth",
+    "examples": "femtosecond",
+    "type": "prefix"
+  },
+  {
+    "id": 242,
+    "affix": "fer-",
+    "meaning": "bear, carry",
+    "examples": "ferry, coniferous, fertile, defer, infer, refer, transfer",
+    "type": "prefix"
+  },
+  {
+    "id": 243,
+    "affix": "fic-, feign-, fain-, fit-, feat-",
+    "meaning": "shape, make, fashion",
+    "examples": "fiction, faint, feign",
+    "type": "prefix"
+  },
+  {
+    "id": 244,
+    "affix": "fid-",
+    "meaning": "belief, faith",
+    "examples": "confide, diffident, fidelity",
+    "type": "prefix"
+  },
+  {
+    "id": 245,
+    "affix": "fid-, fide-, feder-",
+    "meaning": "faith, trust",
+    "examples": "confidante, fidelity, confident, infidelity, infidel, federal, confederacy, semper fi",
+    "type": "prefix"
+  },
+  {
+    "id": 246,
+    "affix": "fig-",
+    "meaning": "shape, form",
+    "examples": "figure, effigy, figment",
+    "type": "prefix"
+  },
+  {
+    "id": 247,
+    "affix": "fila-, fili-",
+    "meaning": "thread",
+    "examples": "filigree, filament, filter, filet, filibuster",
+    "type": "prefix"
+  },
+  {
+    "id": 248,
+    "affix": "fin-",
+    "meaning": "end, ended, finished",
+    "examples": "final, finite, finish, confine, fine, refine, define, finale",
+    "type": "prefix"
+  },
+  {
+    "id": 249,
+    "affix": "fix-",
+    "meaning": "repair, attach",
+    "examples": "fix, fixation, fixture, affix, prefix, suffix",
+    "type": "prefix"
+  },
+  {
+    "id": 250,
+    "affix": "flex-, flect-",
+    "meaning": "bend",
+    "examples": "flex, reflex, flexible, flexor, inflexibility, reflect, deflect, circumflex",
+    "type": "prefix"
+  },
+  {
+    "id": 251,
+    "affix": "flict-",
+    "meaning": "strike",
+    "examples": "affliction, conflict, inflict",
+    "type": "prefix"
+  },
+  {
+    "id": 252,
+    "affix": "flu-, fluc-, fluv-, flux-",
+    "meaning": "flow",
+    "examples": "influence, fluid, flue, flush, fluently, fluctuate, reflux, influx",
+    "type": "prefix"
+  },
+  {
+    "id": 253,
+    "affix": "for-, fore-",
+    "meaning": "before",
+    "examples": "forecast, fortune, foresee",
+    "type": "prefix"
+  },
+  {
+    "id": 254,
+    "affix": "forc-, fort-",
+    "meaning": "strength, strong",
+    "examples": "effort, fort, forte, fortifiable, fortify, fortitude",
+    "type": "prefix"
+  },
+  {
+    "id": 255,
+    "affix": "form-",
+    "meaning": "shape, resemble",
+    "examples": "form, format, conform, formulate, perform, formal, formula",
+    "type": "prefix"
+  },
+  {
+    "id": 256,
+    "affix": "fract-, frag-, frai-",
+    "meaning": "break",
+    "examples": "fracture, infraction, fragile, fraction, refract, frail",
+    "type": "prefix"
+  },
+  {
+    "id": 257,
+    "affix": "fuge-",
+    "meaning": "flee",
+    "examples": "subterfuge, refuge, centrifuge",
+    "type": "prefix"
+  },
+  {
+    "id": 258,
+    "affix": "fuse-",
+    "meaning": "pour",
+    "examples": "confuse, transfuse",
+    "type": "prefix"
+  },
+  {
+    "id": 259,
+    "affix": "gam-",
+    "meaning": "marriage",
+    "examples": "bigamy, monogamy, polygamy",
+    "type": "prefix"
+  },
+  {
+    "id": 260,
+    "affix": "gastr-, gastro-",
+    "meaning": "stomach",
+    "examples": "gastric, gastronomic, gastritis, gastropod",
+    "type": "prefix"
+  },
+  {
+    "id": 261,
+    "affix": "gen-",
+    "meaning": "kind",
+    "examples": "generous",
+    "type": "prefix"
+  },
+  {
+    "id": 262,
+    "affix": "gen-",
+    "meaning": "birth, race, produce",
+    "examples": "genesis, genetics, eugenics, genealogy, generate, genetic, antigen, pathogen",
+    "type": "prefix"
+  },
+  {
+    "id": 263,
+    "affix": "geo-",
+    "meaning": "earth",
+    "examples": "geometry, geography, geocentric, geology",
+    "type": "prefix"
+  },
+  {
+    "id": 264,
+    "affix": "germ-",
+    "meaning": "vital part",
+    "examples": "germination, germ, germane",
+    "type": "prefix"
+  },
+  {
+    "id": 265,
+    "affix": "gest-",
+    "meaning": "carry, bear",
+    "examples": "congest, gestation",
+    "type": "prefix"
+  },
+  {
+    "id": 266,
+    "affix": "giga-",
+    "meaning": "billion",
+    "examples": "gigabyte, gigaflop",
+    "type": "prefix"
+  },
+  {
+    "id": 267,
+    "affix": "gin-",
+    "meaning": "careful",
+    "examples": "gingerly",
+    "type": "prefix"
+  },
+  {
+    "id": 268,
+    "affix": "gloss-, glot-",
+    "meaning": "tongue",
+    "examples": "glossary, polyglot, epiglottis",
+    "type": "prefix"
+  },
+  {
+    "id": 269,
+    "affix": "glu-, glo-",
+    "meaning": "lump, bond, glue",
+    "examples": "glue, agglutinate, conglomerate",
+    "type": "prefix"
+  },
+  {
+    "id": 270,
+    "affix": "gor-",
+    "meaning": "to gather, to bring together",
+    "examples": "category, categorize",
+    "type": "prefix"
+  },
+  {
+    "id": 271,
+    "affix": "grad-, gress-, gree-",
+    "meaning": "to gather, to bring together, step, go",
+    "examples": "grade, degree, progress, gradual, graduate, egress",
+    "type": "prefix"
+  },
+  {
+    "id": 272,
+    "affix": "graph-, gram-, graf-",
+    "meaning": "write, written, draw",
+    "examples": "graph, graphic, autograph, photography, graphite, telegram, polygraph, grammar, biography, lithograph",
+    "type": "prefix"
+  },
+  {
+    "id": 273,
+    "affix": "grat-",
+    "meaning": "pleasing",
+    "examples": "congratulate, gratuity, grateful, ingrate",
+    "type": "prefix"
+  },
+  {
+    "id": 274,
+    "affix": "grav-",
+    "meaning": "heavy, weighty",
+    "examples": "grave, gravity, aggravate, gravitate",
+    "type": "prefix"
+  },
+  {
+    "id": 275,
+    "affix": "greg-",
+    "meaning": "herd",
+    "examples": "gregarious, congregation, segregate, gregarian",
+    "type": "prefix"
+  },
+  {
+    "id": 276,
+    "affix": "hale-, heal-",
+    "meaning": "make whole, sound",
+    "examples": "inhale, exhale, heal, healthy, healthiness",
+    "type": "prefix"
+  },
+  {
+    "id": 277,
+    "affix": "helio-",
+    "meaning": "sun",
+    "examples": "heliograph, heliotrope, heliocentric",
+    "type": "prefix"
+  },
+  {
+    "id": 278,
+    "affix": "hema-, hemo-",
+    "meaning": "blood",
+    "examples": "hemorrhage, hemoglobin, hemophilia, hemostat",
+    "type": "prefix"
+  },
+  {
+    "id": 279,
+    "affix": "her-, here-, hes-",
+    "meaning": "stick",
+    "examples": "adhere, cohere, cohesion, inherent, hereditary, hesitate",
+    "type": "prefix"
+  },
+  {
+    "id": 280,
+    "affix": "hetero-",
+    "meaning": "other, different",
+    "examples": "heterodox, heterogeneous, heterosexual, heterodyne",
+    "type": "prefix"
+  },
+  {
+    "id": 281,
+    "affix": "hex-, ses-, sex-",
+    "meaning": "six",
+    "examples": "hexagon, hexameter, sestet, sextuplets",
+    "type": "prefix"
+  },
+  {
+    "id": 282,
+    "affix": "homo-",
+    "meaning": "same",
+    "examples": "homogenize, homosexual, homonym, homophone",
+    "type": "prefix"
+  },
+  {
+    "id": 283,
+    "affix": "hum-, human-",
+    "meaning": "earth, ground, man",
+    "examples": "humus, exhume, humane",
+    "type": "prefix"
+  },
+  {
+    "id": 284,
+    "affix": "hydr-, hydra-, hydro-",
+    "meaning": "water",
+    "examples": "dehydrate, hydrant, hydraulic, hydraulics, hydrogen, hydrophobia",
+    "type": "prefix"
+  },
+  {
+    "id": 285,
+    "affix": "hyper-",
+    "meaning": "over, above",
+    "examples": "hyperactive, hypertensive, hyperbolic, hypersensitive, hyperventilate, hyperkinetic",
+    "type": "prefix"
+  },
+  {
+    "id": 286,
+    "affix": "hypn-",
+    "meaning": "sleep",
+    "examples": "hypnosis, hypnotherapy",
+    "type": "prefix"
+  },
+  {
+    "id": 287,
+    "affix": "ignis-",
+    "meaning": "fire",
+    "examples": "ignite, igneous, ignition",
+    "type": "prefix"
+  },
+  {
+    "id": 288,
+    "affix": "in-, im-",
+    "meaning": "into, on, near, towards",
+    "examples": "instead, import",
+    "type": "prefix"
+  },
+  {
+    "id": 289,
+    "affix": "in-, im-, il-, ir-",
+    "meaning": "not",
+    "examples": "illegible, irresolute, inaction, inviolate, innocuous, intractable, innocent, impregnable, impossible, imposter",
+    "type": "prefix"
+  },
+  {
+    "id": 290,
+    "affix": "infra-",
+    "meaning": "beneath",
+    "examples": "infrared, infrastructure",
+    "type": "prefix"
+  },
+  {
+    "id": 291,
+    "affix": "inter-",
+    "meaning": "between, among",
+    "examples": "international, intercept, interject, intermission, internal, intermittent",
+    "type": "prefix"
+  },
+  {
+    "id": 292,
+    "affix": "intra-",
+    "meaning": "within, during, between layers, underneath",
+    "examples": "intramural, intranet, intranatal",
+    "type": "prefix"
+  },
+  {
+    "id": 293,
+    "affix": "intro-",
+    "meaning": "into, within, inward",
+    "examples": "interoffice, introvert, introspection, introduce",
+    "type": "prefix"
+  },
+  {
+    "id": 294,
+    "affix": "jac-, ject-",
+    "meaning": "throw",
+    "examples": "reject, eject, project, trajectory, interject, dejected, inject, ejaculate, adjacent",
+    "type": "prefix"
+  },
+  {
+    "id": 295,
+    "affix": "join-, junct-",
+    "meaning": "join",
+    "examples": "adjoining, enjoin, juncture, conjunction, injunction",
+    "type": "prefix"
+  },
+  {
+    "id": 296,
+    "affix": "judice-",
+    "meaning": "judge",
+    "examples": "prejudice",
+    "type": "prefix"
+  },
+  {
+    "id": 297,
+    "affix": "jug-, junct-, just-",
+    "meaning": "to join",
+    "examples": "junction, adjust, conjugal",
+    "type": "prefix"
+  },
+  {
+    "id": 298,
+    "affix": "juven-",
+    "meaning": "young",
+    "examples": "juvenile, rejuvenate",
+    "type": "prefix"
+  },
+  {
+    "id": 299,
+    "affix": "labor-",
+    "meaning": "work",
+    "examples": "laborious, belabor",
+    "type": "prefix"
+  },
+  {
+    "id": 300,
+    "affix": "lau-, lav-, lot-, lut-",
+    "meaning": "wash",
+    "examples": "launder, lavatory, lotion, ablution, dilute",
+    "type": "prefix"
+  },
+  {
+    "id": 301,
+    "affix": "lect-, leg-, lig-",
+    "meaning": "choose, gather, select, read",
+    "examples": "collect, legible, eligible",
+    "type": "prefix"
+  },
+  {
+    "id": 302,
+    "affix": "leg-",
+    "meaning": "law",
+    "examples": "legal, legislate, legislature, legitimize",
+    "type": "prefix"
+  },
+  {
+    "id": 303,
+    "affix": "levi-",
+    "meaning": "light",
+    "examples": "alleviate, levitate, levity",
+    "type": "prefix"
+  },
+  {
+    "id": 304,
+    "affix": "lex-, leag-, leg-",
+    "meaning": "law",
+    "examples": "legal, college, league",
+    "type": "prefix"
+  },
+  {
+    "id": 305,
+    "affix": "liber-, liver-",
+    "meaning": "free",
+    "examples": "liberty, liberal, liberalize, deliverance",
+    "type": "prefix"
+  },
+  {
+    "id": 306,
+    "affix": "lide-",
+    "meaning": "strike",
+    "examples": "collide, nuclide",
+    "type": "prefix"
+  },
+  {
+    "id": 307,
+    "affix": "liter-",
+    "meaning": "letters",
+    "examples": "literary, literature, literal, alliteration, obliterate",
+    "type": "prefix"
+  },
+  {
+    "id": 308,
+    "affix": "loc-, loco-",
+    "meaning": "place, area",
+    "examples": "location, locally, locality, allocate, locomotion",
+    "type": "prefix"
+  },
+  {
+    "id": 309,
+    "affix": "log-, logo-, ology-",
+    "meaning": "word, study, say, speech, reason, study",
+    "examples": "catalog, prologue, dialogue, zoology, logo",
+    "type": "prefix"
+  },
+  {
+    "id": 310,
+    "affix": "loqu-, locut-",
+    "meaning": "talk, speak",
+    "examples": "eloquent, loquacious, colloquial, circumlocution",
+    "type": "prefix"
+  },
+  {
+    "id": 311,
+    "affix": "luc-, lum-, lun-, lus-, lust-",
+    "meaning": "light",
+    "examples": "translucent, luminary, luster, luna, illuminate, illustrate",
+    "type": "prefix"
+  },
+  {
+    "id": 312,
+    "affix": "lude-",
+    "meaning": "play",
+    "examples": "prelude",
+    "type": "prefix"
+  },
+  {
+    "id": 313,
+    "affix": "macr-, macer-",
+    "meaning": "lean",
+    "examples": "emaciated, meager",
+    "type": "prefix"
+  },
+  {
+    "id": 314,
+    "affix": "magn-",
+    "meaning": "great",
+    "examples": "magnify, magnificent, magnanimous, magnate, magnitude, magnum",
+    "type": "prefix"
+  },
+  {
+    "id": 315,
+    "affix": "main-",
+    "meaning": "strength, foremost",
+    "examples": "mainstream, mainsail, domain, remain",
+    "type": "prefix"
+  },
+  {
+    "id": 316,
+    "affix": "mal-",
+    "meaning": "bad, badly",
+    "examples": "malformation, maladjusted, dismal, malady, malcontent, malfunction, malfeasance, maleficent",
+    "type": "prefix"
+  },
+  {
+    "id": 317,
+    "affix": "man-, manu-",
+    "meaning": "hand, make, do",
+    "examples": "manual, manage, manufacture, manacle, manicure, manifest, maneuver, emancipate, management",
+    "type": "prefix"
+  },
+  {
+    "id": 318,
+    "affix": "mand-",
+    "meaning": "command",
+    "examples": "mandatory, remand, mandate",
+    "type": "prefix"
+  },
+  {
+    "id": 319,
+    "affix": "mania-",
+    "meaning": "madness",
+    "examples": "mania, maniac, kleptomania, pyromania",
+    "type": "prefix"
+  },
+  {
+    "id": 320,
+    "affix": "mar-, mari-, mer-",
+    "meaning": "sea, pool",
+    "examples": "marine, marsh, maritime, mermaid",
+    "type": "prefix"
+  },
+  {
+    "id": 321,
+    "affix": "matri-",
+    "meaning": "mother",
+    "examples": "matrimony, maternal, matriarchate, matron",
+    "type": "prefix"
+  },
+  {
+    "id": 322,
+    "affix": "medi-",
+    "meaning": "half, middle, between, halfway",
+    "examples": "mediate, medieval, Mediterranean, mediocre, medium",
+    "type": "prefix"
+  },
+  {
+    "id": 323,
+    "affix": "mega-",
+    "meaning": "great, million",
+    "examples": "megaphone, megaton, megaflop, megalomaniac, megabyte, megalopolis",
+    "type": "prefix"
+  },
+  {
+    "id": 324,
+    "affix": "mem-",
+    "meaning": "recall, remember",
+    "examples": "memo, commemoration, memento, memoir, memorable",
+    "type": "prefix"
+  },
+  {
+    "id": 325,
+    "affix": "ment-",
+    "meaning": "mind",
+    "examples": "mental, mention",
+    "type": "prefix"
+  },
+  {
+    "id": 326,
+    "affix": "meso-",
+    "meaning": "middle",
+    "examples": "mesomorph, mesoamerica, mesosphere",
+    "type": "prefix"
+  },
+  {
+    "id": 327,
+    "affix": "meta-",
+    "meaning": "beyond, change",
+    "examples": "metaphor, metamorphosis, metabolism, metahistorical, metainformation",
+    "type": "prefix"
+  },
+  {
+    "id": 328,
+    "affix": "meter-",
+    "meaning": "measure",
+    "examples": "meter, voltammeter, barometer, thermometer",
+    "type": "prefix"
+  },
+  {
+    "id": 329,
+    "affix": "metr-",
+    "meaning": "admeasure, apportion",
+    "examples": "metrics, asymmetric, parametric, telemetry",
+    "type": "prefix"
+  },
+  {
+    "id": 330,
+    "affix": "micro-",
+    "meaning": "small, millionth",
+    "examples": "microscope, microfilm, microcard, microwave, micrometer, microvolt",
+    "type": "prefix"
+  },
+  {
+    "id": 331,
+    "affix": "migra-",
+    "meaning": "wander",
+    "examples": "migrate, emigrant, immigrate",
+    "type": "prefix"
+  },
+  {
+    "id": 332,
+    "affix": "mill-, kilo-",
+    "meaning": "thousand",
+    "examples": "millennium, kilobyte, kiloton",
+    "type": "prefix"
+  },
+  {
+    "id": 333,
+    "affix": "milli-",
+    "meaning": "thousandth",
+    "examples": "millisecond, milligram, millivolt",
+    "type": "prefix"
+  },
+  {
+    "id": 334,
+    "affix": "min-",
+    "meaning": "little, small",
+    "examples": "minute, minor, minuscule",
+    "type": "prefix"
+  },
+  {
+    "id": 335,
+    "affix": "mis-",
+    "meaning": "wrong, bad, badly",
+    "examples": "misconduct, misinform, misinterpret, mispronounce, misnomer, mistake, misogynist",
+    "type": "prefix"
+  },
+  {
+    "id": 336,
+    "affix": "mit-, miss-",
+    "meaning": "send",
+    "examples": "emit, remit, submit, admit, commit, permit, transmit, omit, intermittent, mission, missile",
+    "type": "prefix"
+  },
+  {
+    "id": 337,
+    "affix": "mob-, mov-, mot-",
+    "meaning": "move",
+    "examples": "motion, remove, mobile, motor",
+    "type": "prefix"
+  },
+  {
+    "id": 338,
+    "affix": "mon-",
+    "meaning": "warn, remind",
+    "examples": "monument, admonition, monitor, premonition",
+    "type": "prefix"
+  },
+  {
+    "id": 339,
+    "affix": "mono-",
+    "meaning": "one",
+    "examples": "monopoly, monotype, monologue, mononucleosis, monorail, monotheist",
+    "type": "prefix"
+  },
+  {
+    "id": 340,
+    "affix": "mor-, mort-",
+    "meaning": "mortal, death",
+    "examples": "mortal, immortal, mortality, mortician, mortuary",
+    "type": "prefix"
+  },
+  {
+    "id": 341,
+    "affix": "morph-",
+    "meaning": "shape, form",
+    "examples": "amorphous, dimorphic, metamorphosis, morphology, polymorphic, morpheme",
+    "type": "prefix"
+  },
+  {
+    "id": 342,
+    "affix": "multi-",
+    "meaning": "many, much",
+    "examples": "multifold, multilingual, multiped, multiply, multitude, multipurpose, multinational",
+    "type": "prefix"
+  },
+  {
+    "id": 343,
+    "affix": "nano-",
+    "meaning": "billionth",
+    "examples": "nanosecond, nanobucks",
+    "type": "prefix"
+  },
+  {
+    "id": 344,
+    "affix": "nasc-, nat-, gnant-, nai-",
+    "meaning": "to be born",
+    "examples": "nascent, native, pregnant, naive",
+    "type": "prefix"
+  },
+  {
+    "id": 345,
+    "affix": "nat-, nasc-",
+    "meaning": "to be from, to spring forth",
+    "examples": "innate, natal, native, renaissance",
+    "type": "prefix"
+  },
+  {
+    "id": 346,
+    "affix": "neo-",
+    "meaning": "new",
+    "examples": "Neolithic, nouveau riche, neologism, neophyte, neonate",
+    "type": "prefix"
+  },
+  {
+    "id": 347,
+    "affix": "neur-",
+    "meaning": "nerve",
+    "examples": "neuritis, neuropathic, neurologist, neural, neurotic",
+    "type": "prefix"
+  },
+  {
+    "id": 348,
+    "affix": "nom-",
+    "meaning": "law, order",
+    "examples": "autonomy, astronomy, gastronomy, economy",
+    "type": "prefix"
+  },
+  {
+    "id": 349,
+    "affix": "nom-, nym-",
+    "meaning": "name",
+    "examples": "nominate, synonym",
+    "type": "prefix"
+  },
+  {
+    "id": 350,
+    "affix": "nomen-, nomin-",
+    "meaning": "name",
+    "examples": "nomenclature, nominate, ignominious",
+    "type": "prefix"
+  },
+  {
+    "id": 351,
+    "affix": "non-",
+    "meaning": "nine",
+    "examples": "nonagon",
+    "type": "prefix"
+  },
+  {
+    "id": 352,
+    "affix": "non-",
+    "meaning": "not",
+    "examples": "nonferrous, nonsense, nonabrasive, nondescript",
+    "type": "prefix"
+  },
+  {
+    "id": 353,
+    "affix": "nov-",
+    "meaning": "new",
+    "examples": "novel, renovate, novice, nova, innovate",
+    "type": "prefix"
+  },
+  {
+    "id": 354,
+    "affix": "nox-, noc-",
+    "meaning": "night",
+    "examples": "nocturnal, equinox, noctilucent",
+    "type": "prefix"
+  },
+  {
+    "id": 355,
+    "affix": "numer-",
+    "meaning": "number",
+    "examples": "numeral, numeration, enumerate, innumerable",
+    "type": "prefix"
+  },
+  {
+    "id": 356,
+    "affix": "numisma-",
+    "meaning": "coin",
+    "examples": "numismatics",
+    "type": "prefix"
+  },
+  {
+    "id": 357,
+    "affix": "ob-, oc-, of-, op-",
+    "meaning": "toward, against, in the way",
+    "examples": "oppose, occur, offer, obtain",
+    "type": "prefix"
+  },
+  {
+    "id": 358,
+    "affix": "oct-",
+    "meaning": "eight",
+    "examples": "octopus, octagon, octogenarian, octave",
+    "type": "prefix"
+  },
+  {
+    "id": 359,
+    "affix": "oligo-",
+    "meaning": "few, little",
+    "examples": "Oligocene, oligosaccharide, oligotrophic, oligarchy",
+    "type": "prefix"
+  },
+  {
+    "id": 360,
+    "affix": "omni-",
+    "meaning": "all, every",
+    "examples": "omnipotent, omniscient, omnipresent, omnivorous",
+    "type": "prefix"
+  },
+  {
+    "id": 361,
+    "affix": "onym-",
+    "meaning": "name",
+    "examples": "anonymous, pseudonym, antonym, synonym",
+    "type": "prefix"
+  },
+  {
+    "id": 362,
+    "affix": "oper-",
+    "meaning": "work",
+    "examples": "operate, cooperate, opus",
+    "type": "prefix"
+  },
+  {
+    "id": 363,
+    "affix": "ortho-",
+    "meaning": "straight, correct",
+    "examples": "orthodox, orthodontist, orthopedic, unorthodox",
+    "type": "prefix"
+  },
+  {
+    "id": 364,
+    "affix": "over-",
+    "meaning": "excessive, above",
+    "examples": "overwork, overall",
+    "type": "prefix"
+  },
+  {
+    "id": 365,
+    "affix": "pac-",
+    "meaning": "peace",
+    "examples": "pacifist, pacify, pacific ocean",
+    "type": "prefix"
+  },
+  {
+    "id": 366,
+    "affix": "pair-, pare-",
+    "meaning": "arrange, assemblage, two",
+    "examples": "repair, impair, compare, prepare",
+    "type": "prefix"
+  },
+  {
+    "id": 367,
+    "affix": "paleo-",
+    "meaning": "old",
+    "examples": "Paleozoic, Paleolithic, paleomagnetism, paleopsychology",
+    "type": "prefix"
+  },
+  {
+    "id": 368,
+    "affix": "pan-",
+    "meaning": "all",
+    "examples": "Pan-American, pan-African, panacea, pandemonium",
+    "type": "prefix"
+  },
+  {
+    "id": 369,
+    "affix": "para-",
+    "meaning": "beside",
+    "examples": "paradox, paraprofessional, paramedic, paraphrase, parachute",
+    "type": "prefix"
+  },
+  {
+    "id": 370,
+    "affix": "pat-, pass-, path-",
+    "meaning": "feel, suffer",
+    "examples": "patient, passion, sympathy, pathology",
+    "type": "prefix"
+  },
+  {
+    "id": 371,
+    "affix": "pater-, patr-",
+    "meaning": "father",
+    "examples": "paternity, patriarch, patriot, patron, patronize",
+    "type": "prefix"
+  },
+  {
+    "id": 372,
+    "affix": "path-, pathy-",
+    "meaning": "feeling, suffering",
+    "examples": "pathos, sympathy, antipathy, apathy, telepathy",
+    "type": "prefix"
+  },
+  {
+    "id": 373,
+    "affix": "ped-, pod-",
+    "meaning": "foot",
+    "examples": "pedal, impede, pedestrian, centipede, tripod, podiatry, antipode, podium",
+    "type": "prefix"
+  },
+  {
+    "id": 374,
+    "affix": "pedo-",
+    "meaning": "child",
+    "examples": "orthopedic, pedagogue, pediatrics",
+    "type": "prefix"
+  },
+  {
+    "id": 375,
+    "affix": "pel-, puls-",
+    "meaning": "drive, push, urge",
+    "examples": "compel, dispel, expel, repel, propel, pulse, impulse, pulsate, compulsory, expulsion, repulsive",
+    "type": "prefix"
+  },
+  {
+    "id": 376,
+    "affix": "pend-, pens-, pond-",
+    "meaning": "hang, weigh",
+    "examples": "pendant, pendulum, suspend, appendage, pensive, append",
+    "type": "prefix"
+  },
+  {
+    "id": 377,
+    "affix": "per-",
+    "meaning": "through, intensive",
+    "examples": "persecute, permit, perspire, perforate, persuade",
+    "type": "prefix"
+  },
+  {
+    "id": 378,
+    "affix": "peri-",
+    "meaning": "around",
+    "examples": "periscope, perimeter, perigee, periodontal",
+    "type": "prefix"
+  },
+  {
+    "id": 379,
+    "affix": "phage-",
+    "meaning": "eat",
+    "examples": "macrophage, bacteriophage",
+    "type": "prefix"
+  },
+  {
+    "id": 380,
+    "affix": "phan-, phas-, phen-, fan-, phant-, fant-",
+    "meaning": "show, make visible",
+    "examples": "phantom, fantasy",
+    "type": "prefix"
+  },
+  {
+    "id": 381,
+    "affix": "phe-",
+    "meaning": "speak",
+    "examples": "blaspheme, cipher, phenomenon, philosopher",
+    "type": "prefix"
+  },
+  {
+    "id": 382,
+    "affix": "phil-",
+    "meaning": "love",
+    "examples": "philosopher, philanthropy, philharmonic, bibliophile",
+    "type": "prefix"
+  },
+  {
+    "id": 383,
+    "affix": "phlegma-",
+    "meaning": "inflammation",
+    "examples": "phlegm, phlegmatic",
+    "type": "prefix"
+  },
+  {
+    "id": 384,
+    "affix": "phobia-, phobos-",
+    "meaning": "fear",
+    "examples": "phobia, claustrophobia, acrophobia, aquaphobia, ergophobia, homophobia",
+    "type": "prefix"
+  },
+  {
+    "id": 385,
+    "affix": "phon-",
+    "meaning": "sound",
+    "examples": "telephone, phonics, phonograph, phonetic, homophone, microphone, symphony, euphonious",
+    "type": "prefix"
+  },
+  {
+    "id": 386,
+    "affix": "phot-, photo-",
+    "meaning": "light",
+    "examples": "photograph, photoelectric, photogenic, photosynthesis, photon",
+    "type": "prefix"
+  },
+  {
+    "id": 387,
+    "affix": "pico-",
+    "meaning": "trillionth",
+    "examples": "picofarad, picocurie, picovolt",
+    "type": "prefix"
+  },
+  {
+    "id": 388,
+    "affix": "pict-",
+    "meaning": "paint, show, draw",
+    "examples": "picture, depict",
+    "type": "prefix"
+  },
+  {
+    "id": 389,
+    "affix": "plac-, plais-",
+    "meaning": "please",
+    "examples": "placid, placebo, placate, complacent",
+    "type": "prefix"
+  },
+  {
+    "id": 390,
+    "affix": "pli-, ply-",
+    "meaning": "fold",
+    "examples": "reply, implicate, ply",
+    "type": "prefix"
+  },
+  {
+    "id": 391,
+    "affix": "plore-",
+    "meaning": "cry out, wail",
+    "examples": "implore, exploration, deploring",
+    "type": "prefix"
+  },
+  {
+    "id": 392,
+    "affix": "plu-, plur-, plus-",
+    "meaning": "more",
+    "examples": "plural, pluralist, plus",
+    "type": "prefix"
+  },
+  {
+    "id": 393,
+    "affix": "pneuma-, pneumon-",
+    "meaning": "breath",
+    "examples": "pneumatic, pneumonia",
+    "type": "prefix"
+  },
+  {
+    "id": 394,
+    "affix": "pod-",
+    "meaning": "foot, feet",
+    "examples": "podiatry, tripod",
+    "type": "prefix"
+  },
+  {
+    "id": 395,
+    "affix": "poli-",
+    "meaning": "city",
+    "examples": "metropolis, police, politics, Indianapolis, megalopolis, acropolis",
+    "type": "prefix"
+  },
+  {
+    "id": 396,
+    "affix": "poly-",
+    "meaning": "many",
+    "examples": "polytheist, polygon, polygamy, polymorphous",
+    "type": "prefix"
+  },
+  {
+    "id": 397,
+    "affix": "pon-, pos-, pound-",
+    "meaning": "place, put",
+    "examples": "postpone, component, opponent, proponent, expose, impose, deposit, posture, position, expound, impound",
+    "type": "prefix"
+  },
+  {
+    "id": 398,
+    "affix": "pop-",
+    "meaning": "people",
+    "examples": "population, populous, popular",
+    "type": "prefix"
+  },
+  {
+    "id": 399,
+    "affix": "port-",
+    "meaning": "carry",
+    "examples": "porter, portable, transport, report, export, import, support, transportation",
+    "type": "prefix"
+  },
+  {
+    "id": 400,
+    "affix": "portion-",
+    "meaning": "part, share",
+    "examples": "portion, proportion",
+    "type": "prefix"
+  },
+  {
+    "id": 401,
+    "affix": "post-",
+    "meaning": "after, behind",
+    "examples": "postpone, postdate",
+    "type": "prefix"
+  },
+  {
+    "id": 402,
+    "affix": "pot-",
+    "meaning": "power",
+    "examples": "potential, potentate, impotent",
+    "type": "prefix"
+  },
+  {
+    "id": 403,
+    "affix": "pre-, pur-",
+    "meaning": "before",
+    "examples": "precede",
+    "type": "prefix"
+  },
+  {
+    "id": 404,
+    "affix": "prehendere-",
+    "meaning": "seize, grasp",
+    "examples": "apprehend, comprehend, comprehensive, prehensile",
+    "type": "prefix"
+  },
+  {
+    "id": 405,
+    "affix": "prin-, prim-, prime-",
+    "meaning": "first",
+    "examples": "primacy, prima donna, primitive, primary, primal, primeval, prince, principal",
+    "type": "prefix"
+  },
+  {
+    "id": 406,
+    "affix": "pro-",
+    "meaning": "for, forward",
+    "examples": "propel",
+    "type": "prefix"
+  },
+  {
+    "id": 407,
+    "affix": "proto-",
+    "meaning": "first",
+    "examples": "prototype, protocol, protagonist, protozoan, Proterozoic, protoindustrial",
+    "type": "prefix"
+  },
+  {
+    "id": 408,
+    "affix": "psych-",
+    "meaning": "mind, soul",
+    "examples": "psyche, psychiatry, psychology, psychosis",
+    "type": "prefix"
+  },
+  {
+    "id": 409,
+    "affix": "punct-",
+    "meaning": "point, dot",
+    "examples": "punctual, punctuation, puncture, acupuncture",
+    "type": "prefix"
+  },
+  {
+    "id": 410,
+    "affix": "pute-",
+    "meaning": "think",
+    "examples": "dispute, computer",
+    "type": "prefix"
+  },
+  {
+    "id": 411,
+    "affix": "quat-, quad-",
+    "meaning": "four",
+    "examples": "quadrangle, quadruplets",
+    "type": "prefix"
+  },
+  {
+    "id": 412,
+    "affix": "quint-, penta-",
+    "meaning": "five",
+    "examples": "quintet, quintuplets, pentagon, pentane, pentameter",
+    "type": "prefix"
+  },
+  {
+    "id": 413,
+    "affix": "quip-",
+    "meaning": "ship",
+    "examples": "equip, equipment",
+    "type": "prefix"
+  },
+  {
+    "id": 414,
+    "affix": "quir-, quis-, quest-, quer-",
+    "meaning": "seek, ask",
+    "examples": "query, inquire, exquisite, quest",
+    "type": "prefix"
+  },
+  {
+    "id": 415,
+    "affix": "re-",
+    "meaning": "back, again",
+    "examples": "report, realign, retract, revise, regain",
+    "type": "prefix"
+  },
+  {
+    "id": 416,
+    "affix": "reg-, recti-",
+    "meaning": "straighten",
+    "examples": "regiment, regular, rectify, correct, direct, rectangle",
+    "type": "prefix"
+  },
+  {
+    "id": 417,
+    "affix": "retro-",
+    "meaning": "backwards",
+    "examples": "retrorocket, retrospect, retrogression, retroactive",
+    "type": "prefix"
+  },
+  {
+    "id": 418,
+    "affix": "ri-, ridi-, risi-",
+    "meaning": "laughter",
+    "examples": "deride, ridicule, ridiculous, derision, risible",
+    "type": "prefix"
+  },
+  {
+    "id": 419,
+    "affix": "rog-, roga-",
+    "meaning": "ask",
+    "examples": "prerogative, interrogation, derogatory",
+    "type": "prefix"
+  },
+  {
+    "id": 420,
+    "affix": "rupt-",
+    "meaning": "break",
+    "examples": "rupture, interrupt, abrupt, disrupt, ruptible",
+    "type": "prefix"
+  },
+  {
+    "id": 421,
+    "affix": "sacr-, sanc-, secr-",
+    "meaning": "sacred",
+    "examples": "sacred, sacrosanct, sanction, consecrate, desecrate",
+    "type": "prefix"
+  },
+  {
+    "id": 422,
+    "affix": "salv-, salu-",
+    "meaning": "safe, healthy",
+    "examples": "salvation, salvage, salutation",
+    "type": "prefix"
+  },
+  {
+    "id": 423,
+    "affix": "sanct-",
+    "meaning": "holy",
+    "examples": "sanctify, sanctuary, sanction, sanctimonious, sacrosanct",
+    "type": "prefix"
+  },
+  {
+    "id": 424,
+    "affix": "sat-, satis-",
+    "meaning": "enough",
+    "examples": "satient, saturate, satisfy",
+    "type": "prefix"
+  },
+  {
+    "id": 425,
+    "affix": "sci-, scio-, scientia-",
+    "meaning": "know",
+    "examples": "science, conscious, omniscient, cognoscenti",
+    "type": "prefix"
+  },
+  {
+    "id": 426,
+    "affix": "scope-",
+    "meaning": "see, watch",
+    "examples": "telescope, microscope, kaleidoscope, periscope, stethoscope",
+    "type": "prefix"
+  },
+  {
+    "id": 427,
+    "affix": "scrib-, script-",
+    "meaning": "write",
+    "examples": "scribe, scribble, inscribe, describe, subscribe, prescribe, manuscript",
+    "type": "prefix"
+  },
+  {
+    "id": 428,
+    "affix": "se-",
+    "meaning": "apart, move away from",
+    "examples": "secede",
+    "type": "prefix"
+  },
+  {
+    "id": 429,
+    "affix": "sect-, sec-",
+    "meaning": "cut",
+    "examples": "intersect, transect, dissect, secant, section",
+    "type": "prefix"
+  },
+  {
+    "id": 430,
+    "affix": "sed-, sess-, sid-",
+    "meaning": "sit",
+    "examples": "sediment, session, obsession, possess, preside, president, reside, subside",
+    "type": "prefix"
+  },
+  {
+    "id": 431,
+    "affix": "semi-",
+    "meaning": "half, partial",
+    "examples": "semifinal, semiconscious, semiannual, semimonthly, semicircle",
+    "type": "prefix"
+  },
+  {
+    "id": 432,
+    "affix": "sen-, scen-",
+    "meaning": "old, grow old",
+    "examples": "senior, senator, senile, senescence, evanescent",
+    "type": "prefix"
+  },
+  {
+    "id": 433,
+    "affix": "sent-, sens-",
+    "meaning": "feel, think",
+    "examples": "sentiment, consent, resent, dissent, sentimental, sense, sensation, sensitive, sensory, dissension",
+    "type": "prefix"
+  },
+  {
+    "id": 434,
+    "affix": "sept-",
+    "meaning": "seven",
+    "examples": "septet, septennial",
+    "type": "prefix"
+  },
+  {
+    "id": 435,
+    "affix": "sequ-, secu-, sue-",
+    "meaning": "follow",
+    "examples": "sequence, consequence, sequel, subsequent, prosecute, consecutive, second, ensue, pursue",
+    "type": "prefix"
+  },
+  {
+    "id": 436,
+    "affix": "serv-",
+    "meaning": "save, serve, keep",
+    "examples": "servant, service, subservient, servitude, preserve, conserve, reservation, deserve, conservation, observe",
+    "type": "prefix"
+  },
+  {
+    "id": 437,
+    "affix": "sign-, signi-",
+    "meaning": "sign, mark, seal",
+    "examples": "signal, signature, design, insignia, significant",
+    "type": "prefix"
+  },
+  {
+    "id": 438,
+    "affix": "simil-, simul-",
+    "meaning": "like, resembling",
+    "examples": "similar, assimilate, simulate, simulacrum, simultaneous",
+    "type": "prefix"
+  },
+  {
+    "id": 439,
+    "affix": "sist-, sta-, stit-",
+    "meaning": "stand, withstand, make up",
+    "examples": "assist, insist, persist, circumstance, stamina, status, state, static, stable, stationary, substitute",
+    "type": "prefix"
+  },
+  {
+    "id": 440,
+    "affix": "soci-",
+    "meaning": "to join, companions",
+    "examples": "sociable, society",
+    "type": "prefix"
+  },
+  {
+    "id": 441,
+    "affix": "sol-, solus-",
+    "meaning": "alone",
+    "examples": "solo, soliloquy, solitaire, solitude, solitary, isolate",
+    "type": "prefix"
+  },
+  {
+    "id": 442,
+    "affix": "solv-, solu-, solut-",
+    "meaning": "loosen, explain",
+    "examples": "solvent, solve, absolve, resolve, soluble, solution, resolution, resolute, dissolute, absolution",
+    "type": "prefix"
+  },
+  {
+    "id": 443,
+    "affix": "somn-",
+    "meaning": "sleep",
+    "examples": "insomnia, somnambulist",
+    "type": "prefix"
+  },
+  {
+    "id": 444,
+    "affix": "soph-",
+    "meaning": "wise",
+    "examples": "sophomore, philosophy, sophisticated",
+    "type": "prefix"
+  },
+  {
+    "id": 445,
+    "affix": "spec-, spect-, spi-, spic-",
+    "meaning": "look, see",
+    "examples": "specimen, specific, spectator, spectacle, aspect, speculate, inspect, respect, prospect, retrospective, introspective, expect, conspicuous",
+    "type": "prefix"
+  },
+  {
+    "id": 446,
+    "affix": "sper-",
+    "meaning": "render favorable",
+    "examples": "prosper",
+    "type": "prefix"
+  },
+  {
+    "id": 447,
+    "affix": "sphere-",
+    "meaning": "ball, sphere",
+    "examples": "sphere, stratosphere, hemisphere, spheroid",
+    "type": "prefix"
+  },
+  {
+    "id": 448,
+    "affix": "spir-",
+    "meaning": "breath",
+    "examples": "spirit, conspire, inspire, aspire, expire, perspire, respiration",
+    "type": "prefix"
+  },
+  {
+    "id": 449,
+    "affix": "stand-, stant-, stab-, stat-, stan-, sti-, sta-, st-, stead-",
+    "meaning": "stand",
+    "examples": "stature, establish, stance",
+    "type": "prefix"
+  },
+  {
+    "id": 450,
+    "affix": "strain-, strict-, string-, stige-",
+    "meaning": "bind, pull, draw tight",
+    "examples": "stringent, strict, restrict, constrict, restrain, boa constrictor",
+    "type": "prefix"
+  },
+  {
+    "id": 451,
+    "affix": "stru-, struct-, stroy-, stry-",
+    "meaning": "build",
+    "examples": "construe, structure, construct, instruct, obstruct, destruction, destroy, industry, ministry",
+    "type": "prefix"
+  },
+  {
+    "id": 452,
+    "affix": "sub-, suc-, suf-, sup-, sur-, sus-",
+    "meaning": "under, below, from, secretly, instead of",
+    "examples": "sustain, survive, support, suffice, succeed, submerge, submarine, substandard, subnormal, subvert",
+    "type": "prefix"
+  },
+  {
+    "id": 453,
+    "affix": "sume-, sump-",
+    "meaning": "take, use, waste",
+    "examples": "consume, assume, sump, presumption",
+    "type": "prefix"
+  },
+  {
+    "id": 454,
+    "affix": "super-, supra-",
+    "meaning": "over, above",
+    "examples": "superior, suprarenal, superscript, supernatural, superimpose, supercede",
+    "type": "prefix"
+  },
+  {
+    "id": 455,
+    "affix": "syn-, sym-",
+    "meaning": "together, at the same time",
+    "examples": "sympathy, synthesis, synchronous, syndicate",
+    "type": "prefix"
+  },
+  {
+    "id": 456,
+    "affix": "tact-, tang-, tag-, tig-, ting-",
+    "meaning": "touch",
+    "examples": "tactile, contact, intact, intangible, tangible, contagious, contiguous, contingent",
+    "type": "prefix"
+  },
+  {
+    "id": 457,
+    "affix": "tain-, ten-, tent-, tin-",
+    "meaning": "hold, keep, have",
+    "examples": "retain, continue, content, tenacious",
+    "type": "prefix"
+  },
+  {
+    "id": 458,
+    "affix": "tect-, teg-",
+    "meaning": "cover",
+    "examples": "detect, protect, tegular, tegument",
+    "type": "prefix"
+  },
+  {
+    "id": 459,
+    "affix": "tele-",
+    "meaning": "distance, far, from afar",
+    "examples": "telephone, telegraph, telegram, telescope, television, telephoto, telecast, telepathy",
+    "type": "prefix"
+  },
+  {
+    "id": 460,
+    "affix": "tem-, tempo-",
+    "meaning": "time",
+    "examples": "tempo, temporary, extemporaneously, contemporary, pro tem, temporal",
+    "type": "prefix"
+  },
+  {
+    "id": 461,
+    "affix": "ten-, tin-, tain-",
+    "meaning": "hold",
+    "examples": "tenacious, tenant, tenure, untenable, detention, retentive, content, pertinent, continent, obstinate, contain, abstain, pertain, detain",
+    "type": "prefix"
+  },
+  {
+    "id": 462,
+    "affix": "tend-, tent-, tens-",
+    "meaning": "stretch, strain",
+    "examples": "tendency, extend, intend, contend, pretend, superintend, tender, extent, tension, pretense",
+    "type": "prefix"
+  },
+  {
+    "id": 463,
+    "affix": "tera-",
+    "meaning": "trillion",
+    "examples": "terabyte, teraflop",
+    "type": "prefix"
+  },
+  {
+    "id": 464,
+    "affix": "term-",
+    "meaning": "end, boundary, limit",
+    "examples": "exterminate, terminal",
+    "type": "prefix"
+  },
+  {
+    "id": 465,
+    "affix": "terr-, terra-",
+    "meaning": "earth",
+    "examples": "terrain, terrarium, territory, terrestrial",
+    "type": "prefix"
+  },
+  {
+    "id": 466,
+    "affix": "test-",
+    "meaning": "to bear witness",
+    "examples": "testament, detest, testimony, attest, testify",
+    "type": "prefix"
+  },
+  {
+    "id": 467,
+    "affix": "the-, theo-",
+    "meaning": "God, a god",
+    "examples": "monotheism, polytheism, atheism, theology",
+    "type": "prefix"
+  },
+  {
+    "id": 468,
+    "affix": "therm-",
+    "meaning": "heat",
+    "examples": "thermometer, theorem, thermal, thermos bottle, thermostat, hypothermia",
+    "type": "prefix"
+  },
+  {
+    "id": 469,
+    "affix": "thesis-, thet-",
+    "meaning": "place, put",
+    "examples": "antithesis, hypothesis, synthesis, epithet",
+    "type": "prefix"
+  },
+  {
+    "id": 470,
+    "affix": "tire-",
+    "meaning": "draw, pull",
+    "examples": "attire, retire, entire",
+    "type": "prefix"
+  },
+  {
+    "id": 471,
+    "affix": "tom-",
+    "meaning": "cut",
+    "examples": "atom, appendectomy, tonsillectomy, dichotomy, anatomy",
+    "type": "prefix"
+  },
+  {
+    "id": 472,
+    "affix": "tor-, tors-, tort-",
+    "meaning": "twist",
+    "examples": "torture, retort, extort, distort, contort, torsion, tortuous, torturous",
+    "type": "prefix"
+  },
+  {
+    "id": 473,
+    "affix": "tox-",
+    "meaning": "poison",
+    "examples": "toxic, intoxicate, antitoxin",
+    "type": "prefix"
+  },
+  {
+    "id": 474,
+    "affix": "tract-, tra-, trai-, treat-",
+    "meaning": "drag, draw, pull",
+    "examples": "attract, tractor, traction, extract, retract, protract, detract, subtract, contract, intractable",
+    "type": "prefix"
+  },
+  {
+    "id": 475,
+    "affix": "trans-",
+    "meaning": "across, beyond, change",
+    "examples": "transform, transoceanic, transmit, transportation, transducer",
+    "type": "prefix"
+  },
+  {
+    "id": 476,
+    "affix": "tri-",
+    "meaning": "three",
+    "examples": "tripod, triangle, trinity, trilateral",
+    "type": "prefix"
+  },
+  {
+    "id": 477,
+    "affix": "trib-",
+    "meaning": "pay, bestow",
+    "examples": "tribute, contribute, attribute, retribution, tributary",
+    "type": "prefix"
+  },
+  {
+    "id": 478,
+    "affix": "tribute-",
+    "meaning": "give",
+    "examples": "contribute, distribute, tributary",
+    "type": "prefix"
+  },
+  {
+    "id": 479,
+    "affix": "turbo-",
+    "meaning": "disturb",
+    "examples": "turbulent, disturb, turbid, turmoil",
+    "type": "prefix"
+  },
+  {
+    "id": 480,
+    "affix": "typ-",
+    "meaning": "print",
+    "examples": "type, prototype, typical, typography, typewriter, typology, typify",
+    "type": "prefix"
+  },
+  {
+    "id": 481,
+    "affix": "ultima-",
+    "meaning": "last",
+    "examples": "ultimate, ultimatum",
+    "type": "prefix"
+  },
+  {
+    "id": 482,
+    "affix": "umber-, umbraticum-",
+    "meaning": "shadow",
+    "examples": "umbra, penumbra, umbrage, adumbrate",
+    "type": "prefix"
+  },
+  {
+    "id": 483,
+    "affix": "un-",
+    "meaning": "not, against, opposite",
+    "examples": "unceasing, unequal",
+    "type": "prefix"
+  },
+  {
+    "id": 484,
+    "affix": "uni-",
+    "meaning": "one",
+    "examples": "uniform, unilateral, universal, unity, unanimous, unite, unison, unicorn",
+    "type": "prefix"
+  },
+  {
+    "id": 485,
+    "affix": "vac-",
+    "meaning": "empty",
+    "examples": "vacate, vacuum, evacuate, vacation, vacant, vacuous",
+    "type": "prefix"
+  },
+  {
+    "id": 486,
+    "affix": "vade-",
+    "meaning": "go",
+    "examples": "evade, invader",
+    "type": "prefix"
+  },
+  {
+    "id": 487,
+    "affix": "vale-, vali-, valu-",
+    "meaning": "strength, worth",
+    "examples": "equivalent, valiant, validity, evaluate, value, valor",
+    "type": "prefix"
+  },
+  {
+    "id": 488,
+    "affix": "veh-, vect-",
+    "meaning": "to carry",
+    "examples": "vector, vehicle, convection, vehement",
+    "type": "prefix"
+  },
+  {
+    "id": 489,
+    "affix": "ven-, vent-",
+    "meaning": "come",
+    "examples": "convene, intervene, venue, convenient, avenue, circumvent, invent, convent, venture, event, advent, prevent",
+    "type": "prefix"
+  },
+  {
+    "id": 490,
+    "affix": "ver-, veri-",
+    "meaning": "true",
+    "examples": "very, aver, verdict, verity, verify, verisimilitude",
+    "type": "prefix"
+  },
+  {
+    "id": 491,
+    "affix": "verb-, verv-",
+    "meaning": "word",
+    "examples": "verify, veracity, verbalize, verve",
+    "type": "prefix"
+  },
+  {
+    "id": 492,
+    "affix": "vert-, vers-",
+    "meaning": "turn, change",
+    "examples": "convert, revert, advertise, versatile, vertigo, invert, reversion, extravert, introvert, diversion, convertible, reverse, controversy",
+    "type": "prefix"
+  },
+  {
+    "id": 493,
+    "affix": "vi-",
+    "meaning": "way",
+    "examples": "viable, vibrate, vibrant",
+    "type": "prefix"
+  },
+  {
+    "id": 494,
+    "affix": "vic-, vicis-",
+    "meaning": "change, substitute",
+    "examples": "vicarious, vicar, vicissitude",
+    "type": "prefix"
+  },
+  {
+    "id": 495,
+    "affix": "vict-, vinc-",
+    "meaning": "conquer",
+    "examples": "victor, evict, convict, convince, invincible",
+    "type": "prefix"
+  },
+  {
+    "id": 496,
+    "affix": "vid-, vis-",
+    "meaning": "see",
+    "examples": "video, evident, provide, providence, visible, revise, supervise, vista, visit, vision, review, indivisible",
+    "type": "prefix"
+  },
+  {
+    "id": 497,
+    "affix": "viv-, vita-, vivi-",
+    "meaning": "alive, life",
+    "examples": "revive, survive, vivid, vivacious, vitality, vivisection, vital, vitamins, revitalize",
+    "type": "prefix"
+  },
+  {
+    "id": 498,
+    "affix": "voc-, voke-",
+    "meaning": "call",
+    "examples": "vocation, avocation, convocation, invocation, evoke, provoke, revoke, advocate, provocative, vocal",
+    "type": "prefix"
+  },
+  {
+    "id": 499,
+    "affix": "vol-",
+    "meaning": "will",
+    "examples": "malevolent, benevolent, volunteer, volition",
+    "type": "prefix"
+  },
+  {
+    "id": 500,
+    "affix": "volcan-",
+    "meaning": "fire",
+    "examples": "volcano, vulcanize, Vulcan",
+    "type": "prefix"
+  },
+  {
+    "id": 501,
+    "affix": "volv-, volt-, vol-",
+    "meaning": "turn about, roll",
+    "examples": "revolve, voluble, voluminous, convolution, revolt, evolution",
+    "type": "prefix"
+  },
+  {
+    "id": 502,
+    "affix": "vor-",
+    "meaning": "eat greedily",
+    "examples": "voracious, carnivorous, herbivorous, omnivorous, devour",
+    "type": "prefix"
+  },
+  {
+    "id": 503,
+    "affix": "with-",
+    "meaning": "against",
+    "examples": "withhold, without, withdraw, forthwith",
+    "type": "prefix"
+  },
+  {
+    "id": 504,
+    "affix": "zo-",
+    "meaning": "animal",
+    "examples": "zoo, zoology, zodiac, protozoan",
+    "type": "prefix"
+  }
+]

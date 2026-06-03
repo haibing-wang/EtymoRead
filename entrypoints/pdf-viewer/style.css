@@ -1,0 +1,253 @@
+/* PDF Viewer Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f131a;
+  color: #e5e7eb;
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.viewer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Toolbar */
+.viewer-toolbar {
+  height: 48px;
+  background-color: #171d26;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 30%;
+}
+
+.toolbar-logo {
+  font-size: 1.3rem;
+}
+
+.toolbar-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #f3f4f6;
+}
+
+.toolbar-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-indicator {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #9ca3af;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.highlight-stats-badge {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.15);
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.zoom-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #9ca3af;
+  min-width: 40px;
+  text-align: center;
+}
+
+/* Toolbar Buttons */
+.toolbar-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbar-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Content Area */
+.viewer-content {
+  flex: 1;
+  overflow: auto;
+  padding: 24px;
+  display: flex;
+  background-color: #090c10;
+}
+
+.viewer-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15vh;
+  color: #9ca3af;
+}
+
+.viewer-loading .spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #818cf8;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.viewer-error-card {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 480px;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.viewer-error-card h3 {
+  color: #f87171;
+  margin-top: 0;
+}
+
+/* PDF Page Canvas & Text Overlay Wrapper */
+.pdf-page-wrapper {
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: auto; /* Centers safely, avoids left/top overflow clipping */
+}
+
+.pdf-canvas {
+  display: block;
+}
+
+/* PDF.js Text Layer standard specifications */
+.textLayer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 1.0;
+  line-height: 1.0;
+}
+
+.textLayer > span {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+}
+
+/* Selection and Highlight overrides */
+.textLayer ::selection {
+  background: rgba(99, 102, 241, 0.25);
+}
+
+.textLayer .etymoread-highlight {
+  color: transparent !important; /* Force text transparent to prevent duplicate drawing */
+  border-bottom: 2px dashed rgba(99, 102, 241, 0.85);
+  text-decoration: none; /* Override standard underline */
+}
+
+.textLayer .etymoread-highlight:hover {
+  background-color: rgba(99, 102, 241, 0.15);
+  border-radius: 2px;
+}
+
+/* Custom Scrollbar Page Navigator */
+.pdf-custom-scrollbar-track {
+  position: absolute;
+  right: 12px;
+  top: 72px;
+  bottom: 24px;
+  width: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.pdf-custom-scrollbar-track:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.pdf-custom-scrollbar-thumb {
+  position: absolute;
+  left: 0px;
+  width: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  cursor: grab;
+  transition: background 0.15s ease, width 0.15s ease, left 0.15s ease;
+}
+
+.pdf-custom-scrollbar-thumb:hover,
+.pdf-custom-scrollbar-thumb.dragging {
+  background: #818cf8; /* Indigo-400 */
+  width: 10px;
+  left: -1px;
+}
+
+.pdf-custom-scrollbar-thumb.dragging {
+  cursor: grabbing;
+}
