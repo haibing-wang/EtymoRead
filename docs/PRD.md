@@ -1,6 +1,8 @@
 # 📄 文档 1：插件整体架构与技术规格说明书 (PRD/Arch)
 
 > **适用对象：** AI Agent (Antigravity) 核心上下文注入、人类程序员技术审查
+>  etym.json来自于 https://github.com/lonng/etym 代码仓库
+>  affixes.json的数据来源 是我自己从数据中抽取的
 
 ## 1. 项目愿景与核心目标
 
