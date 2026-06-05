@@ -9,6 +9,7 @@ export interface TooltipEventDetail {
   y: number;
   context?: string;
   targetHeight?: number;
+  localData?: MatchResult | null;
 }
 
 export function Tooltip() {
@@ -23,6 +24,9 @@ export function Tooltip() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [aiAvailable, setAiAvailable] = useState(false);
+  const [aiEnabled, setAiEnabled] = useState(false);
+  const [etymonlineEnabled, setEtymonlineEnabled] = useState(true);
+  const [vocabularyEnabled, setVocabularyEnabled] = useState(true);
 
   const tooltipRef = useRef<HTMLDivElement>(null);
   const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -32,6 +36,14 @@ export function Tooltip() {
     checkAIAvailability().then(status => {
       setAiAvailable(status.available === 'yes' || status.available === 'readily');
     });
+
+    if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.local) {
+      chrome.storage.local.get(['aiEnabled', 'etymonlineEnabled', 'vocabularyEnabled'], (res) => {
+        setAiEnabled(!!res.aiEnabled);
+        setEtymonlineEnabled(res.etymonlineEnabled !== false);
+        setVocabularyEnabled(res.vocabularyEnabled !== false);
+      });
+    }
 
     const handleShow = (e: Event) => {
       if (hideTimeoutRef.current) {
@@ -48,7 +60,7 @@ export function Tooltip() {
       setLayoutReady(false); // Hide during recalculation to prevent jumping/ghosting
 
       if (detail.type === 'local') {
-        const local = matchLocalEtymology(detail.word);
+        const local = detail.localData !== undefined ? detail.localData : matchLocalEtymology(detail.word);
         setLocalData(local);
         setAiText('');
         setLoading(false);
@@ -71,12 +83,36 @@ export function Tooltip() {
       }, 300);
     };
 
+    const handleStorageChange = (
+      changes: { [key: string]: chrome.storage.StorageChange },
+      areaName: string
+    ) => {
+      if (areaName === 'local') {
+        if (changes.aiEnabled) {
+          setAiEnabled(!!changes.aiEnabled.newValue);
+        }
+        if (changes.etymonlineEnabled) {
+          setEtymonlineEnabled(changes.etymonlineEnabled.newValue !== false);
+        }
+        if (changes.vocabularyEnabled) {
+          setVocabularyEnabled(changes.vocabularyEnabled.newValue !== false);
+        }
+      }
+    };
+
+    if (typeof chrome !== 'undefined' && chrome.storage) {
+      chrome.storage.onChanged.addListener(handleStorageChange);
+    }
+
     document.addEventListener('etymoread-show-tooltip', handleShow);
     document.addEventListener('etymoread-hide-tooltip', handleHide);
 
     return () => {
       document.removeEventListener('etymoread-show-tooltip', handleShow);
       document.removeEventListener('etymoread-hide-tooltip', handleHide);
+      if (typeof chrome !== 'undefined' && chrome.storage) {
+        chrome.storage.onChanged.removeListener(handleStorageChange);
+      }
       if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
     };
   }, []);
@@ -175,9 +211,7 @@ export function Tooltip() {
       <div className="etymoread-tooltip-card">
         <div className="etymoread-tooltip-header">
           <span className="etymoread-tooltip-word">{word}</span>
-          {type === 'local' ? (
-            <span className="etymoread-badge badge-local">Local Breakdown</span>
-          ) : (
+          {type === 'ai' && (
             <span className="etymoread-badge badge-ai">Gemini Nano AI</span>
           )}
         </div>
@@ -189,7 +223,13 @@ export function Tooltip() {
                 <div className="etymoread-row">
                   <span className="etymoread-tag tag-prefix">Prefix</span>
                   <span className="etymoread-text">
-                    {localData.matchedPrefixes.map(p => `${p.affix} (${p.meaning})`).join(', ')}
+                    {localData.matchedPrefixes.map((p, idx) => (
+                      <React.Fragment key={p.id}>
+                        {idx > 0 && ', '}
+                        <span className="etymoread-affix-name">{p.affix}</span>
+                        <span className="etymoread-meaning-part"> ({p.meaning})</span>
+                      </React.Fragment>
+                    ))}
                   </span>
                 </div>
               )}
@@ -198,7 +238,13 @@ export function Tooltip() {
                 <div className="etymoread-row">
                   <span className="etymoread-tag tag-root">Root</span>
                   <span className="etymoread-text">
-                    {localData.matchedRoots.map(r => `${r.root} (${r.meaning}, ${r.origin})`).join(', ')}
+                    {localData.matchedRoots.map((r, idx) => (
+                      <React.Fragment key={r.id}>
+                        {idx > 0 && ', '}
+                        <span className="etymoread-affix-name">{r.root}</span>
+                        <span className="etymoread-meaning-part"> ({r.meaning}{r.origin ? `, ${r.origin}` : ''})</span>
+                      </React.Fragment>
+                    ))}
                   </span>
                 </div>
               )}
@@ -207,7 +253,13 @@ export function Tooltip() {
                 <div className="etymoread-row">
                   <span className="etymoread-tag tag-suffix">Suffix</span>
                   <span className="etymoread-text">
-                    {localData.matchedSuffixes.map(s => `${s.affix} (${s.meaning})`).join(', ')}
+                    {localData.matchedSuffixes.map((s, idx) => (
+                      <React.Fragment key={s.id}>
+                        {idx > 0 && ', '}
+                        <span className="etymoread-affix-name">{s.affix}</span>
+                        <span className="etymoread-meaning-part"> ({s.meaning})</span>
+                      </React.Fragment>
+                    ))}
                   </span>
                 </div>
               )}
@@ -219,33 +271,77 @@ export function Tooltip() {
                 </div>
               )}
 
-              <details className="etymoread-notice-details">
-                <summary className="etymoread-notice-summary">⚠️ Notice on Over-matching</summary>
-                <div className="etymoread-notice-content">
-                  Local rule-based matching may occasionally over-match. Use AI deconstruction for precise, context-aware analysis.
+              {(vocabularyEnabled || etymonlineEnabled) && (
+                <div className="etymoread-actions-row">
+                  {vocabularyEnabled && (
+                    <a
+                      href={`https://www.vocabulary.com/dictionary/${encodeURIComponent(word.toLowerCase())}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="etymoread-link-btn vocabulary-btn"
+                    >
+                      📖 Vocabulary
+                    </a>
+                  )}
+                  {etymonlineEnabled && (
+                    <a
+                      href={`https://www.etymonline.com/word/${encodeURIComponent(word.toLowerCase())}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="etymoread-link-btn etymonline-btn"
+                    >
+                      🔍 Etymonline
+                    </a>
+                  )}
                 </div>
-              </details>
+              )}
 
-              <button
-                className="etymoread-upgrade-btn"
-                onClick={handleUpgradeToAI}
-                disabled={!aiAvailable}
-              >
-                {aiAvailable ? '✨ Upgrade to Local AI Analysis' : '✨ Local AI Analysis (Requires Chrome AI)'}
-              </button>
+              {aiAvailable && aiEnabled && (
+                <button
+                  className="etymoread-upgrade-btn"
+                  onClick={handleUpgradeToAI}
+                >
+                  ✨ Upgrade to Local AI Analysis
+                </button>
+              )}
             </div>
           )}
 
           {type === 'local' && !localData && (
             <div className="etymoread-empty">
               <p>No local root/affix matched.</p>
-              <button
-                className="etymoread-upgrade-btn"
-                onClick={handleUpgradeToAI}
-                disabled={!aiAvailable}
-              >
-                {aiAvailable ? '✨ Analyze with Local AI' : '✨ Local AI Analysis (Requires Chrome AI)'}
-              </button>
+              {(vocabularyEnabled || etymonlineEnabled) && (
+                <div className="etymoread-actions-row" style={{ marginTop: '8px' }}>
+                  {vocabularyEnabled && (
+                    <a
+                      href={`https://www.vocabulary.com/dictionary/${encodeURIComponent(word.toLowerCase())}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="etymoread-link-btn vocabulary-btn"
+                    >
+                      📖 Vocabulary
+                    </a>
+                  )}
+                  {etymonlineEnabled && (
+                    <a
+                      href={`https://www.etymonline.com/word/${encodeURIComponent(word.toLowerCase())}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="etymoread-link-btn etymonline-btn"
+                    >
+                      🔍 Etymonline
+                    </a>
+                  )}
+                </div>
+              )}
+              {aiAvailable && aiEnabled && (
+                <button
+                  className="etymoread-upgrade-btn"
+                  onClick={handleUpgradeToAI}
+                >
+                  ✨ Analyze with Local AI
+                </button>
+              )}
             </div>
           )}
 

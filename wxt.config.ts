@@ -17,7 +17,7 @@ export default defineConfig({
     host_permissions: ['<all_urls>'],
     web_accessible_resources: [
       {
-        resources: ['pdf.worker.min.mjs', 'pdf.mjs', 'pdf-viewer.html', 'affixes.json', 'wordRoots.json', 'cmaps/*'],
+        resources: ['pdf.worker.min.mjs', 'pdf.mjs', 'pdf-viewer.html', 'affixes.json', 'wordRoots.json', 'etymo-dictionary.json', 'cmaps/*'],
         matches: ['<all_urls>']
       }
     ],

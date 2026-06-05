@@ -33,11 +33,24 @@ interface NormalizedRoot {
   cleanRoots: string[];
 }
 
+export interface DictEntry {
+  root: string;
+  meaning: string;
+  tooltip: string;
+}
+
 let normalizedPrefixes: NormalizedAffix[] = [];
 let normalizedSuffixes: NormalizedAffix[] = [];
 let normalizedRoots: NormalizedRoot[] = [];
+let etymoDictionary: Record<string, DictEntry> = {};
+let matchingMode: 'dict' | 'algorithm' = 'dict';
 let isInitialized = false;
 let initPromise: Promise<void> | null = null;
+
+export function setMatchingMode(mode: 'dict' | 'algorithm') {
+  matchingMode = mode;
+  console.log(`Matching mode set to: ${mode}`);
+}
 
 /**
  * Asynchronously loads the JSON databases from the extension package
@@ -51,14 +64,25 @@ export function initializeDatabase(): Promise<void> {
     try {
       const affixesUrl = chrome.runtime.getURL('affixes.json');
       const wordRootsUrl = chrome.runtime.getURL('wordRoots.json');
+      const dictUrl = chrome.runtime.getURL('etymo-dictionary.json');
 
-      const [affixesRes, wordRootsRes] = await Promise.all([
+      const [affixesRes, wordRootsRes, dictRes, storageRes] = await Promise.all([
         fetch(affixesUrl),
-        fetch(wordRootsUrl)
+        fetch(wordRootsUrl),
+        fetch(dictUrl),
+        new Promise<{ matchingMode?: 'dict' | 'algorithm' }>((resolve) => {
+          if (typeof chrome !== 'undefined' && chrome.storage) {
+            chrome.storage.local.get(['matchingMode'], (res) => resolve(res));
+          } else {
+            resolve({});
+          }
+        })
       ]);
 
       const affixesData: Affix[] = await affixesRes.json();
       const wordRootsData: WordRoot[] = await wordRootsRes.json();
+      etymoDictionary = await dictRes.json();
+      matchingMode = storageRes.matchingMode || 'dict';
 
       // Process affixes
       affixesData.forEach(item => {
@@ -101,7 +125,7 @@ export function initializeDatabase(): Promise<void> {
       });
 
       isInitialized = true;
-      console.log('EtymoRead local databases loaded and normalized.');
+      console.log('EtymoRead local databases and dictionary loaded. Mode:', matchingMode);
     } catch (err) {
       console.error('Failed to initialize EtymoRead databases:', err);
       initPromise = null; // Allow retry on failure
@@ -143,7 +167,7 @@ const STOPWORDS = new Set([
  * Returns null if no significant etymological matches are found.
  * Note: Assumes initializeDatabase() has completed.
  */
-export function matchLocalEtymology(word: string): MatchResult | null {
+export function matchLocalEtymology(word: string, forceAlgorithm = false): MatchResult | null {
   if (!isInitialized) {
     return null;
   }
@@ -152,6 +176,70 @@ export function matchLocalEtymology(word: string): MatchResult | null {
   if (cleanWord.length <= 3) return null;
   if (STOPWORDS.has(cleanWord)) return null;
 
+  // 1. Mode 1: Selected Dictionary Mode (Default, unless forced to algorithm)
+  if (matchingMode === 'dict' && !forceAlgorithm) {
+    const dictEntry = etymoDictionary[cleanWord];
+    if (!dictEntry) {
+      return null;
+    }
+
+    const matchedPrefixes: Affix[] = [];
+    const matchedSuffixes: Affix[] = [];
+    const matchedRoots: WordRoot[] = [];
+
+    const lines = dictEntry.tooltip.split('\n');
+    lines.forEach((line, index) => {
+      const match = line.match(/^(Prefix|Suffix|Root):\s*([^(]+)\s*\(([^)]+)\)$/);
+      if (match) {
+        const [_, type, rootOrAffix, meaningAndOrigin] = match;
+        const cleanRootOrAffix = rootOrAffix.trim();
+
+        if (type === 'Prefix') {
+          matchedPrefixes.push({
+            id: index + 10000,
+            affix: cleanRootOrAffix,
+            meaning: meaningAndOrigin.trim(),
+            examples: '',
+            type: 'prefix'
+          });
+        } else if (type === 'Suffix') {
+          matchedSuffixes.push({
+            id: index + 20000,
+            affix: cleanRootOrAffix,
+            meaning: meaningAndOrigin.trim(),
+            examples: '',
+            type: 'suffix'
+          });
+        } else if (type === 'Root') {
+          let meaning = meaningAndOrigin;
+          let origin: any = 'Latin';
+          const originMatch = meaningAndOrigin.match(/(.+),\s*from\s+(Greek|Latin)/i);
+          if (originMatch) {
+            meaning = originMatch[1].trim();
+            origin = originMatch[2].trim();
+          }
+
+          matchedRoots.push({
+            id: index + 30000,
+            root: cleanRootOrAffix,
+            meaning: meaning,
+            origin: origin,
+            examples: ''
+          });
+        }
+      }
+    });
+
+    return {
+      word: cleanWord,
+      matchedPrefixes,
+      matchedSuffixes,
+      matchedRoots,
+      explanation: dictEntry.tooltip
+    };
+  }
+
+  // 2. Mode 2: Aggressive Algorithm Mode (or forceAlgorithm is true)
   let matchedPrefixes: Affix[] = [];
   let matchedSuffixes: Affix[] = [];
   let matchedRoots: WordRoot[] = [];

@@ -131,6 +131,17 @@
   word-break: break-word;
 }
 
+.etymoread-affix-name {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.etymoread-meaning-part {
+  color: #a5b4fc; /* soft lavender/indigo */
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
 .etymoread-examples {
   background: rgba(255, 255, 255, 0.03);
   border: 1px dashed rgba(255, 255, 255, 0.06);
@@ -283,4 +294,56 @@
   text-align: center;
   color: #9ca3af;
   padding: 10px 0;
+}
+
+/* Actions Row Layout */
+.etymoread-actions-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  width: 100%;
+}
+
+/* Link Button Base */
+.etymoread-link-btn {
+  flex: 1;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  color: #d1d5db;
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 6px 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
+}
+
+.etymoread-link-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Vocabulary.com Preferred Recommendation Styles */
+.etymoread-link-btn.vocabulary-btn {
+  border-color: rgba(99, 102, 241, 0.25);
+  background: rgba(99, 102, 241, 0.06);
+  color: #c7d2fe;
+}
+
+.etymoread-link-btn.vocabulary-btn:hover {
+  background: rgba(99, 102, 241, 0.14);
+  border-color: rgba(99, 102, 241, 0.45);
+  color: #ffffff;
+}
+
+.etymoread-link-btn:active {
+  transform: translateY(0);
 }

@@ -114,7 +114,8 @@ export default defineBackground(() => {
 
   // Run initializations
   chrome.runtime.onInstalled.addListener(async () => {
-    const { pdfEnabled = false } = await chrome.storage.local.get('pdfEnabled');
+    const { pdfEnabled = false, matchingMode = 'dict', aiEnabled = false, etymonlineEnabled = true, vocabularyEnabled = true } = await chrome.storage.local.get(['pdfEnabled', 'matchingMode', 'aiEnabled', 'etymonlineEnabled', 'vocabularyEnabled']);
+    await chrome.storage.local.set({ pdfEnabled, matchingMode, aiEnabled, etymonlineEnabled, vocabularyEnabled });
     await syncPDFInterception(pdfEnabled);
   });
 

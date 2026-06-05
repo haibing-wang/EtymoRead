@@ -4,7 +4,7 @@ import { ContentScriptContext } from 'wxt/utils/content-script-context';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { highlightDOM } from '../utils/highlighter';
-import { initializeDatabase } from '../utils/etymologyMatcher';
+import { initializeDatabase, setMatchingMode, matchLocalEtymology } from '../utils/etymologyMatcher';
 import { Tooltip, TooltipEventDetail } from '../components/Tooltip';
 import '../assets/tooltip.css'; // Imported stylesheet (WXT automatically bundles and injects it)
 
@@ -84,6 +84,7 @@ export default defineContentScript({
       if (debounceTimer) clearTimeout(debounceTimer);
       debounceTimer = setTimeout(() => {
         if (isInvalidated) return;
+        if (isComposing) return; // Safety check if composition started during debounce delay
         const count = highlightDOM(document.body);
         safeChromeCall((runtime) => {
           runtime.sendMessage({ action: 'updateHighlightCount', count });
@@ -93,6 +94,10 @@ export default defineContentScript({
 
     const handleCompositionStart = () => {
       isComposing = true;
+      if (debounceTimer) {
+        clearTimeout(debounceTimer);
+        debounceTimer = null;
+      }
     };
 
     const handleCompositionEnd = () => {
@@ -158,27 +163,74 @@ export default defineContentScript({
       
       // Match clean english words of length >= 3
       if (/^[a-zA-Z]{3,}$/.test(selectedText)) {
-        safeChromeCall((runtime, storage) => {
-          // Query storage to check if AI is enabled
-          storage.local.get(['aiEnabled'], (res) => {
-            if (isInvalidated) return;
-            if (res && res.aiEnabled) {
-              document.dispatchEvent(
-                new CustomEvent<TooltipEventDetail>('etymoread-show-tooltip', {
-                  detail: {
-                    word: selectedText,
-                    type: 'ai',
-                    x: e.clientX,
-                    y: e.clientY,
-                    context: getContextSentence(selection)
-                  }
-                })
-              );
-            }
+        // Step 1. Try static decomposition matching using 600 core roots (forceAlgorithm = true)
+        const localResult = matchLocalEtymology(selectedText, true);
+
+        if (localResult) {
+          // Found local match! Display it directly
+          document.dispatchEvent(
+            new CustomEvent<TooltipEventDetail>('etymoread-show-tooltip', {
+              detail: {
+                word: selectedText,
+                type: 'local',
+                x: e.clientX,
+                y: e.clientY,
+                localData: localResult
+              }
+            })
+          );
+        } else {
+          // Step 2. If no local match, check if AI is enabled/available for fallback
+          safeChromeCall((runtime, storage) => {
+            storage.local.get(['aiEnabled'], (res) => {
+              if (isInvalidated) return;
+              if (res && res.aiEnabled) {
+                document.dispatchEvent(
+                  new CustomEvent<TooltipEventDetail>('etymoread-show-tooltip', {
+                    detail: {
+                      word: selectedText,
+                      type: 'ai',
+                      x: e.clientX,
+                      y: e.clientY,
+                      context: getContextSentence(selection)
+                    }
+                  })
+                );
+              } else {
+                // Show empty local result (user can see "No local root/affix matched")
+                document.dispatchEvent(
+                  new CustomEvent<TooltipEventDetail>('etymoread-show-tooltip', {
+                    detail: {
+                      word: selectedText,
+                      type: 'local',
+                      x: e.clientX,
+                      y: e.clientY,
+                      localData: null
+                    }
+                  })
+                );
+              }
+            });
           });
-        });
+        }
       }
     };
+
+    // Watch for matchingMode changes from the popup settings to dynamically refresh highlights
+    const handleStorageChange = (
+      changes: { [key: string]: chrome.storage.StorageChange },
+      areaName: string
+    ) => {
+      if (areaName === 'local' && changes.matchingMode) {
+        const newMode = changes.matchingMode.newValue || 'dict';
+        setMatchingMode(newMode);
+        triggerScan();
+      }
+    };
+
+    if (typeof chrome !== 'undefined' && chrome.storage) {
+      chrome.storage.onChanged.addListener(handleStorageChange);
+    }
 
     document.addEventListener('mouseover', handleMouseOver);
     document.addEventListener('mouseout', handleMouseOut);
@@ -198,6 +250,9 @@ export default defineContentScript({
         hoverShowTimer = null;
       }
       observer.disconnect();
+      if (typeof chrome !== 'undefined' && chrome.storage) {
+        chrome.storage.onChanged.removeListener(handleStorageChange);
+      }
       document.removeEventListener('mouseover', handleMouseOver);
       document.removeEventListener('mouseout', handleMouseOut);
       document.removeEventListener('dblclick', handleDblClick);

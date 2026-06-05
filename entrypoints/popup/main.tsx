@@ -7,6 +7,9 @@ function Popup() {
   const [highlightCount, setHighlightCount] = useState<number>(0);
   const [currentUrl, setCurrentUrl] = useState<string>('');
   const [pdfEnabled, setPdfEnabled] = useState<boolean>(false);
+  const [matchingMode, setMatchingMode] = useState<'dict' | 'algorithm'>('dict');
+  const [etymonlineEnabled, setEtymonlineEnabled] = useState<boolean>(true);
+  const [vocabularyEnabled, setVocabularyEnabled] = useState<boolean>(true);
 
   useEffect(() => {
     if (typeof chrome !== 'undefined' && chrome.tabs) {
@@ -27,8 +30,11 @@ function Popup() {
     }
 
     if (typeof chrome !== 'undefined' && chrome.storage) {
-      chrome.storage.local.get(['pdfEnabled'], (res) => {
+      chrome.storage.local.get(['pdfEnabled', 'matchingMode', 'etymonlineEnabled', 'vocabularyEnabled'], (res) => {
         setPdfEnabled(!!res.pdfEnabled);
+        setMatchingMode(res.matchingMode || 'dict');
+        setEtymonlineEnabled(res.etymonlineEnabled !== false);
+        setVocabularyEnabled(res.vocabularyEnabled !== false);
       });
     }
   }, []);
@@ -42,6 +48,30 @@ function Popup() {
     setPdfEnabled(val);
     if (typeof chrome !== 'undefined' && chrome.storage) {
       chrome.storage.local.set({ pdfEnabled: val });
+    }
+  };
+
+  const handleMatchingModeToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.checked ? 'algorithm' : 'dict';
+    setMatchingMode(val);
+    if (typeof chrome !== 'undefined' && chrome.storage) {
+      chrome.storage.local.set({ matchingMode: val });
+    }
+  };
+
+  const handleEtymonlineToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.checked;
+    setEtymonlineEnabled(val);
+    if (typeof chrome !== 'undefined' && chrome.storage) {
+      chrome.storage.local.set({ etymonlineEnabled: val });
+    }
+  };
+
+  const handleVocabularyToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.checked;
+    setVocabularyEnabled(val);
+    if (typeof chrome !== 'undefined' && chrome.storage) {
+      chrome.storage.local.set({ vocabularyEnabled: val });
     }
   };
 
@@ -122,6 +152,60 @@ function Popup() {
             <span className="badge-text">{aiStatus.text}</span>
           </div>
           <p className="ai-status-desc">{aiStatus.desc}</p>
+        </section>
+
+        {/* Matching Mode Card */}
+        <section className="config-card">
+          <div className="config-row">
+            <div className="config-info">
+              <span className="config-title">🚀 Aggressive Matching Mode</span>
+              <span className="config-desc">Enable to use prefix/suffix algorithms for aggressive page-wide highlighting; disable for 100% precise dictionary highlights (recommended)</span>
+            </div>
+            <label className="switch">
+              <input
+                type="checkbox"
+                checked={matchingMode === 'algorithm'}
+                onChange={handleMatchingModeToggle}
+              />
+              <span className="slider round"></span>
+            </label>
+          </div>
+        </section>
+
+        {/* Vocabulary.com Link Card */}
+        <section className="config-card">
+          <div className="config-row">
+            <div className="config-info">
+              <span className="config-title">📖 Quick Link to Vocabulary.com (Recommended)</span>
+              <span className="config-desc">Display a direct link button in the tooltip to view smart contexts & word families on vocabulary.com</span>
+            </div>
+            <label className="switch">
+              <input
+                type="checkbox"
+                checked={vocabularyEnabled}
+                onChange={handleVocabularyToggle}
+              />
+              <span className="slider round"></span>
+            </label>
+          </div>
+        </section>
+
+        {/* Etymonline Link Card */}
+        <section className="config-card">
+          <div className="config-row">
+            <div className="config-info">
+              <span className="config-title">🔍 Quick Link to Etymonline</span>
+              <span className="config-desc">Display a direct link button in the tooltip to view the word's full origins on etymonline.com</span>
+            </div>
+            <label className="switch">
+              <input
+                type="checkbox"
+                checked={etymonlineEnabled}
+                onChange={handleEtymonlineToggle}
+              />
+              <span className="slider round"></span>
+            </label>
+          </div>
         </section>
 
         {/* PDF Switch Card */}
