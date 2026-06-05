@@ -1,4 +1,4 @@
-/* PDF Viewer Styles */
+/* PDF Viewer — Single-Page Scroll Mode */
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
   height: 100%;
 }
 
-/* Toolbar */
+/* ── Toolbar ── */
 .viewer-toolbar {
   height: 48px;
   background-color: #171d26;
@@ -38,9 +38,7 @@ body {
   max-width: 30%;
 }
 
-.toolbar-logo {
-  font-size: 1.3rem;
-}
+.toolbar-logo { font-size: 1.3rem; }
 
 .toolbar-title {
   font-size: 0.88rem;
@@ -61,6 +59,8 @@ body {
   font-size: 0.82rem;
   font-weight: 600;
   color: #9ca3af;
+  min-width: 110px;
+  text-align: center;
 }
 
 .toolbar-right {
@@ -89,11 +89,11 @@ body {
   font-size: 0.8rem;
   font-weight: 600;
   color: #9ca3af;
-  min-width: 40px;
+  min-width: 44px;
   text-align: center;
 }
 
-/* Toolbar Buttons */
+/* ── Toolbar Buttons ── */
 .toolbar-btn {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -107,27 +107,57 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .toolbar-btn:hover:not(:disabled) {
   background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: #fff;
   border-color: rgba(255, 255, 255, 0.15);
 }
-
 .toolbar-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
 
-/* Content Area */
+/* ── Main scrollable content area ──────────────────────────────────────────
+   overflow-y: auto so the user can naturally scroll within a tall page.
+   When the page height > container height, the browser shows a scrollbar
+   and the user can see the hidden part of the page before flipping.
+   Also supports drag-to-pan via JS (grab cursor).
+   ─────────────────────────────────────────────────────────────────────── */
 .viewer-content {
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: auto;
+  background-color: #090c10;
   padding: 24px;
   display: flex;
-  background-color: #090c10;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* Grab cursor — signals that click-drag panning is available */
+  cursor: grab;
+  /* Prevent browser touch-scroll from stealing pointer events during drag */
+  touch-action: none;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) rgba(0, 0, 0, 0.1);
 }
 
+/* While actively dragging */
+.viewer-content.dragging,
+.viewer-content:active {
+  cursor: grabbing;
+}
+
+.viewer-content::-webkit-scrollbar { width: 8px; height: 8px; }
+.viewer-content::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.1); }
+.viewer-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+.viewer-content::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.25); }
+
+/* ── Loading & Error ── */
 .viewer-loading {
   display: flex;
   flex-direction: column;
@@ -137,7 +167,7 @@ body {
   color: #9ca3af;
 }
 
-.viewer-loading .spinner {
+.spinner {
   width: 32px;
   height: 32px;
   border: 3px solid rgba(255, 255, 255, 0.1);
@@ -145,6 +175,8 @@ body {
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
+
+@keyframes spin { to { transform: rotate(360deg); } }
 
 .viewer-error-card {
   background: rgba(239, 68, 68, 0.08);
@@ -155,27 +187,20 @@ body {
   margin-top: 10vh;
   text-align: center;
 }
+.viewer-error-card h3 { color: #f87171; margin-top: 0; }
 
-.viewer-error-card h3 {
-  color: #f87171;
-  margin-top: 0;
-}
-
-/* PDF Page Canvas & Text Overlay Wrapper */
+/* ── PDF Page Wrapper ── */
 .pdf-page-wrapper {
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   background-color: #ffffff;
-  border-radius: 4px;
-  overflow: hidden;
-  margin: auto; /* Centers safely, avoids left/top overflow clipping */
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 
-.pdf-canvas {
-  display: block;
-}
+.pdf-canvas { display: block; }
 
-/* PDF.js Text Layer standard specifications */
+/* ── PDF.js Text Layer ── */
 .textLayer {
   position: absolute;
   left: 0;
@@ -195,59 +220,15 @@ body {
   transform-origin: 0% 0%;
 }
 
-/* Selection and Highlight overrides */
-.textLayer ::selection {
-  background: rgba(99, 102, 241, 0.25);
-}
+.textLayer ::selection { background: rgba(99, 102, 241, 0.25); }
 
 .textLayer .etymoread-highlight {
-  color: transparent !important; /* Force text transparent to prevent duplicate drawing */
+  color: transparent !important;
   border-bottom: 2px dashed rgba(99, 102, 241, 0.85);
-  text-decoration: none; /* Override standard underline */
+  text-decoration: none;
 }
 
 .textLayer .etymoread-highlight:hover {
   background-color: rgba(99, 102, 241, 0.15);
   border-radius: 2px;
-}
-
-/* Custom Scrollbar Page Navigator */
-.pdf-custom-scrollbar-track {
-  position: absolute;
-  right: 12px;
-  top: 72px;
-  bottom: 24px;
-  width: 10px;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  z-index: 1000;
-  cursor: pointer;
-  user-select: none;
-  transition: background 0.2s ease;
-}
-
-.pdf-custom-scrollbar-track:hover {
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.pdf-custom-scrollbar-thumb {
-  position: absolute;
-  left: 0px;
-  width: 8px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-  cursor: grab;
-  transition: background 0.15s ease, width 0.15s ease, left 0.15s ease;
-}
-
-.pdf-custom-scrollbar-thumb:hover,
-.pdf-custom-scrollbar-thumb.dragging {
-  background: #818cf8; /* Indigo-400 */
-  width: 10px;
-  left: -1px;
-}
-
-.pdf-custom-scrollbar-thumb.dragging {
-  cursor: grabbing;
 }

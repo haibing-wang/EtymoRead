@@ -49,6 +49,7 @@ An elegant, high-performance, and privacy-first Chrome Extension that highlights
 │   ├── architecture.md      # Detailed system architecture design (in Chinese)
 │   ├── user_guide_zh.md     # Chinese User Manual
 │   ├── publish_guide_zh.md  # Chrome Extension Publishing Manual (in Chinese)
+│   ├── pdf_viewer_troubleshooting_zh.md # PDF viewer issue analysis & solution steps (in Chinese)
 │   └── chrome_store_assets_en.md # Store metadata templates, permissions justifications & privacy policy
 ├── entrypoints/             # Independent extension entrypoints
 │   ├── background.ts        # Service worker intercepting/redirecting PDFs

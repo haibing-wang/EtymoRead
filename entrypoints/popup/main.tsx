@@ -6,6 +6,7 @@ function Popup() {
   const { availability, isEnabled, toggleAI, loading } = useChromeAI();
   const [highlightCount, setHighlightCount] = useState<number>(0);
   const [currentUrl, setCurrentUrl] = useState<string>('');
+  const [pdfEnabled, setPdfEnabled] = useState<boolean>(false);
 
   useEffect(() => {
     if (typeof chrome !== 'undefined' && chrome.tabs) {
@@ -24,10 +25,24 @@ function Popup() {
         }
       });
     }
+
+    if (typeof chrome !== 'undefined' && chrome.storage) {
+      chrome.storage.local.get(['pdfEnabled'], (res) => {
+        setPdfEnabled(!!res.pdfEnabled);
+      });
+    }
   }, []);
 
   const handleToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
     toggleAI(e.target.checked);
+  };
+
+  const handlePdfToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.checked;
+    setPdfEnabled(val);
+    if (typeof chrome !== 'undefined' && chrome.storage) {
+      chrome.storage.local.set({ pdfEnabled: val });
+    }
   };
 
   const getAIStatusLabel = () => {
@@ -107,6 +122,24 @@ function Popup() {
             <span className="badge-text">{aiStatus.text}</span>
           </div>
           <p className="ai-status-desc">{aiStatus.desc}</p>
+        </section>
+
+        {/* PDF Switch Card */}
+        <section className="config-card">
+          <div className="config-row">
+            <div className="config-info">
+              <span className="config-title">📄 Enable Custom PDF Viewer</span>
+              <span className="config-desc">Automatically intercept and open online or local PDFs in our interactive etymology-aware viewer</span>
+            </div>
+            <label className="switch">
+              <input
+                type="checkbox"
+                checked={pdfEnabled}
+                onChange={handlePdfToggle}
+              />
+              <span className="slider round"></span>
+            </label>
+          </div>
         </section>
 
         {/* Short Guide Card */}

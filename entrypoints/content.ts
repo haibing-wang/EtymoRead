@@ -16,12 +16,30 @@ export default defineContentScript({
     let isInvalidated = false;
 
     // Helper to safely execute chrome extension APIs
-    const safeChromeCall = (fn: () => void) => {
+    const safeChromeCall = (
+      fn: (runtime: typeof chrome.runtime, storage: typeof chrome.storage) => void
+    ) => {
       if (isInvalidated) return;
+      if (typeof chrome === 'undefined') {
+        isInvalidated = true;
+        return;
+      }
+      const runtime = chrome.runtime;
+      const storage = chrome.storage;
+      if (!runtime || !storage) {
+        isInvalidated = true;
+        return;
+      }
       try {
-        fn();
+        fn(runtime, storage);
       } catch (err: any) {
-        if (err.message && err.message.includes('Extension context invalidated')) {
+        const msg = err?.message || '';
+        if (
+          msg.includes('Extension context invalidated') ||
+          msg.includes('context invalidated') ||
+          msg.includes('Cannot read properties of undefined') ||
+          msg.includes('Cannot read property')
+        ) {
           isInvalidated = true;
           return;
         }
@@ -35,8 +53,8 @@ export default defineContentScript({
         await initializeDatabase();
         if (isInvalidated) return;
         const count = highlightDOM(document.body);
-        safeChromeCall(() => {
-          chrome.runtime.sendMessage({ action: 'updateHighlightCount', count });
+        safeChromeCall((runtime) => {
+          runtime.sendMessage({ action: 'updateHighlightCount', count });
         });
       } catch (err: any) {
         if (err.message && err.message.includes('Extension context invalidated')) {
@@ -58,16 +76,32 @@ export default defineContentScript({
 
     // 2. Set up dynamic mutation observer for single page apps / dynamic content
     let debounceTimer: NodeJS.Timeout | null = null;
-    const observer = new MutationObserver(() => {
+    let isComposing = false;
+
+    const triggerScan = () => {
       if (isInvalidated) return;
+      if (isComposing) return;
       if (debounceTimer) clearTimeout(debounceTimer);
       debounceTimer = setTimeout(() => {
         if (isInvalidated) return;
         const count = highlightDOM(document.body);
-        safeChromeCall(() => {
-          chrome.runtime.sendMessage({ action: 'updateHighlightCount', count });
+        safeChromeCall((runtime) => {
+          runtime.sendMessage({ action: 'updateHighlightCount', count });
         });
       }, 1500); // 1.5s debounce to avoid lag on fast rendering pages
+    };
+
+    const handleCompositionStart = () => {
+      isComposing = true;
+    };
+
+    const handleCompositionEnd = () => {
+      isComposing = false;
+      triggerScan();
+    };
+
+    const observer = new MutationObserver(() => {
+      triggerScan();
     });
     observer.observe(document.body, { childList: true, subtree: true });
 
@@ -124,11 +158,11 @@ export default defineContentScript({
       
       // Match clean english words of length >= 3
       if (/^[a-zA-Z]{3,}$/.test(selectedText)) {
-        safeChromeCall(() => {
+        safeChromeCall((runtime, storage) => {
           // Query storage to check if AI is enabled
-          chrome.storage.local.get(['aiEnabled'], (res) => {
+          storage.local.get(['aiEnabled'], (res) => {
             if (isInvalidated) return;
-            if (res.aiEnabled) {
+            if (res && res.aiEnabled) {
               document.dispatchEvent(
                 new CustomEvent<TooltipEventDetail>('etymoread-show-tooltip', {
                   detail: {
@@ -149,6 +183,8 @@ export default defineContentScript({
     document.addEventListener('mouseover', handleMouseOver);
     document.addEventListener('mouseout', handleMouseOut);
     document.addEventListener('dblclick', handleDblClick);
+    document.addEventListener('compositionstart', handleCompositionStart);
+    document.addEventListener('compositionend', handleCompositionEnd);
 
     // Clean up on extension context invalidation
     ctx.onInvalidated(() => {
@@ -165,6 +201,8 @@ export default defineContentScript({
       document.removeEventListener('mouseover', handleMouseOver);
       document.removeEventListener('mouseout', handleMouseOut);
       document.removeEventListener('dblclick', handleDblClick);
+      document.removeEventListener('compositionstart', handleCompositionStart);
+      document.removeEventListener('compositionend', handleCompositionEnd);
       reactRoot.unmount();
       tooltipRoot.remove();
     });

@@ -36,7 +36,9 @@ export function highlightDOM(root: Node): number {
       acceptNode: (node) => {
         const parent = node.parentElement;
         if (!parent) return NodeFilter.FILTER_REJECT;
-        if (IGNORED_TAGS.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
+        if (IGNORED_TAGS.has(parent.tagName) || parent.isContentEditable) {
+          return NodeFilter.FILTER_REJECT;
+        }
         
         // Skip nodes that are already part of our highlight or inside the tooltip container
         if (parent.classList.contains('etymoread-highlight') || 
