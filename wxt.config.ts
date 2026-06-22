@@ -12,8 +12,8 @@ export default defineConfig({
   manifest: {
     name: 'EtymoRead',
     version: '1.0.0',
-    description: 'An etymology reading assistant for decomposing English words while reading web pages and PDFs.',
-    permissions: ['storage', 'declarativeNetRequest', 'activeTab', 'webNavigation'],
+    description: 'Read web pages and PDFs with instant offline etymology highlights and secure on-device Chrome AI word deconstructions.',
+    permissions: ['storage', 'declarativeNetRequest', 'webNavigation'],
     host_permissions: ['<all_urls>'],
     web_accessible_resources: [
       {

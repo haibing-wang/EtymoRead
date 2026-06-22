@@ -71,12 +71,12 @@ When submitting, Chrome requires you to justify why the extension requests speci
 
 *   **`storage`**:
     *   *Justification*: "Required to store user configuration preferences (such as enabling or disabling the Gemini Nano double-click triggers) and to cache word highlight metrics locally."
-*   **`activeTab`**:
-    *   *Justification*: "Required to access the current active page structure to scan text nodes and wrap vocabulary terms in highlight styles upon user activation."
 *   **`declarativeNetRequest`**:
     *   *Justification*: "Required to redirect local `file://` or online web requests for PDF documents to the extension's dedicated, feature-rich HTML5 PDF viewer page."
 *   **`webNavigation`**:
     *   *Justification*: "Required to intercept navigation events for `.pdf` URLs and initiate the declarative redirection to our native, CJK-compatible PDF renderer prior to standard rendering."
+*   **`<all_urls>` (Host Permission)**:
+    *   *Justification*: "Required to inject the lightweight content script into web pages that the user navigates to, in order to scan text nodes for root/affix matching patterns and provide hover-triggered etymological explanations locally on any site."
 
 ---
 
@@ -99,6 +99,5 @@ EtymoRead does not integrate with any third-party APIs, analytic platforms, trac
 
 4. Permission Usage
 - declarativeNetRequest/webNavigation: Used solely to redirect PDF files to our offline rendering page.
-- activeTab: Used to identify text nodes for root word highlights.
 - storage: Used solely to persist user settings (such as AI toggle switch states).
 ```
